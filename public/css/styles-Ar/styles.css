@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+:root {
+    --yello-primary: #c8972d;
+    --yello-secondary: #eec230;
+    --yello-thirdry: #f0cd65;
+    --dark-primary: #221e1f;
+    --dark-secondary: #3b2314;
+    --text-gray: #624f43;
+    --white-primary: #fff9e8;
+    --white-secondary: #fafafa;
+    --bg-white: #f3f9eb;
+}
