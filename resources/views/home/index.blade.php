@@ -120,7 +120,7 @@
         <div class="statistics__container  flex flex-wrap items-center justify-center gap-4 mt-12 ">
 
             <div
-                class="flex items-center justify-between w-[30%] min-w-[220px] bg-[var(--bg-white)] px-4 py-3 rounded-2xl">
+                class="flex items-center justify-between w-[30%] min-w-[220px] bg-[var(--bg-white)] px-4 py-3 rounded-2xl min-h-[140px]">
                 <div class="w-[40%] px-5">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="country">
                         <defs>
@@ -146,7 +146,7 @@
             </div>
 
             <div
-                class="flex items-center justify-between w-[30%] min-w-[220px] bg-[var(--bg-white)] px-4 py-3 rounded-2xl">
+                class="flex items-center justify-between w-[30%] min-w-[220px] bg-[var(--bg-white)] px-4 py-3 rounded-2xl min-h-[140px]">
                 <div class="w-[40%] px-5">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.612 64" id="doctor">
                         <defs>
@@ -170,28 +170,29 @@
             </div>
 
 
-            <div class="flex items-center justify-between w-[30%] min-w-[220px] bg-[var(--bg-white)] px-4 py-3 rounded-2xl" ">
+            <div
+                class="flex items-center justify-between w-[30%] min-w-[220px] bg-[var(--bg-white)] px-4 py-3 rounded-2xl min-h-[140px]">
                 <div class=" w-[40%] px-5">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="client">
-                    <defs>
-                        <style>
-                            .aea {
-                                fill: var(--yello-secondary)
-                            }
-                        </style>
-                    </defs>
-                    <path class="aea"
-                        d="M40.178 34.3a13.439 13.439 0 019.386-3.754 12.906 12.906 0 0111.982 7.46 1.28 1.28 0 102.346-1.026 15.042 15.042 0 00-9.4-8.24 9.125 9.125 0 003.257-7.07c0-4.893-3.671-8.875-8.184-8.875a8.247 8.247 0 00-7.651 5.752 15.826 15.826 0 00-4.988-2.607 9.124 9.124 0 003.259-7.071C40.187 3.982 36.516 0 32 0s-8.184 3.981-8.184 8.875a9.125 9.125 0 003.258 7.07 15.87 15.87 0 00-4.993 2.609 8.247 8.247 0 00-7.648-5.754c-4.512 0-8.184 3.981-8.184 8.875a9.125 9.125 0 003.257 7.07 15.042 15.042 0 00-9.4 8.24 1.28 1.28 0 102.347 1.025 12.906 12.906 0 0111.982-7.46 13.425 13.425 0 019.393 3.76 9.107 9.107 0 003.247 6.859 15.866 15.866 0 00-4.991 2.609 8.247 8.247 0 00-7.651-5.753c-4.512 0-8.184 3.981-8.184 8.875a9.124 9.124 0 003.259 7.071 15.052 15.052 0 00-9.4 8.235 1.28 1.28 0 102.344 1.028 12.913 12.913 0 0111.983-7.458 12.912 12.912 0 0111.983 7.458 1.28 1.28 0 102.344-1.027 15.05 15.05 0 00-9.4-8.237 9.124 9.124 0 003.255-7.07c0-.057-.007-.112-.008-.168a13.613 13.613 0 0118.782 0c0 .057-.008.112-.008.17a9.124 9.124 0 003.257 7.069 15.05 15.05 0 00-9.4 8.237 1.28 1.28 0 002.344 1.027 12.912 12.912 0 0111.983-7.458 12.913 12.913 0 0111.983 7.458 1.28 1.28 0 002.344-1.028 15.052 15.052 0 00-9.4-8.235 9.124 9.124 0 003.257-7.072c0-4.893-3.671-8.875-8.184-8.875a8.247 8.247 0 00-7.65 5.751 15.826 15.826 0 00-4.986-2.607 9.107 9.107 0 003.247-6.869zM14.433 53.215c-3.1 0-5.624-2.833-5.624-6.315s2.523-6.315 5.624-6.315a5.922 5.922 0 015.593 5.655c.021.236.031.446.031.66 0 3.482-2.523 6.315-5.624 6.315zm35.134-12.63c3.1 0 5.624 2.833 5.624 6.315s-2.523 6.315-5.624 6.315-5.624-2.833-5.624-6.315c0-.213.01-.423.028-.63.297-3.202 2.693-5.685 5.596-5.685zm0-25.225c3.1 0 5.624 2.833 5.624 6.315s-2.523 6.315-5.624 6.315-5.624-2.833-5.624-6.315c0-.212.01-.421.028-.627.297-3.205 2.693-5.688 5.596-5.688zM32 2.56c3.1 0 5.625 2.833 5.625 6.315S35.1 15.19 32 15.19s-5.624-2.833-5.624-6.315S28.9 2.56 32 2.56zm0 15.19a13.442 13.442 0 019.391 3.758c0 .056-.008.111-.008.168a9.125 9.125 0 003.257 7.07 15.838 15.838 0 00-4.887 2.525A8.281 8.281 0 0032 25.226a8.281 8.281 0 00-7.751 6.047 15.819 15.819 0 00-4.892-2.529 9.125 9.125 0 003.257-7.069c0-.056-.007-.11-.008-.166A13.461 13.461 0 0132 17.75zm-17.567-2.39a5.922 5.922 0 015.593 5.656c.021.238.031.447.031.659 0 3.482-2.523 6.315-5.624 6.315s-5.624-2.833-5.624-6.315 2.523-6.315 5.624-6.315zm17.594 25.053c-3.14-.016-5.649-2.841-5.649-6.313S28.9 27.785 32 27.785s5.625 2.833 5.625 6.315-2.51 6.3-5.6 6.313z" />
-                </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="client">
+                        <defs>
+                            <style>
+                                .aea {
+                                    fill: var(--yello-secondary)
+                                }
+                            </style>
+                        </defs>
+                        <path class="aea"
+                            d="M40.178 34.3a13.439 13.439 0 019.386-3.754 12.906 12.906 0 0111.982 7.46 1.28 1.28 0 102.346-1.026 15.042 15.042 0 00-9.4-8.24 9.125 9.125 0 003.257-7.07c0-4.893-3.671-8.875-8.184-8.875a8.247 8.247 0 00-7.651 5.752 15.826 15.826 0 00-4.988-2.607 9.124 9.124 0 003.259-7.071C40.187 3.982 36.516 0 32 0s-8.184 3.981-8.184 8.875a9.125 9.125 0 003.258 7.07 15.87 15.87 0 00-4.993 2.609 8.247 8.247 0 00-7.648-5.754c-4.512 0-8.184 3.981-8.184 8.875a9.125 9.125 0 003.257 7.07 15.042 15.042 0 00-9.4 8.24 1.28 1.28 0 102.347 1.025 12.906 12.906 0 0111.982-7.46 13.425 13.425 0 019.393 3.76 9.107 9.107 0 003.247 6.859 15.866 15.866 0 00-4.991 2.609 8.247 8.247 0 00-7.651-5.753c-4.512 0-8.184 3.981-8.184 8.875a9.124 9.124 0 003.259 7.071 15.052 15.052 0 00-9.4 8.235 1.28 1.28 0 102.344 1.028 12.913 12.913 0 0111.983-7.458 12.912 12.912 0 0111.983 7.458 1.28 1.28 0 102.344-1.027 15.05 15.05 0 00-9.4-8.237 9.124 9.124 0 003.255-7.07c0-.057-.007-.112-.008-.168a13.613 13.613 0 0118.782 0c0 .057-.008.112-.008.17a9.124 9.124 0 003.257 7.069 15.05 15.05 0 00-9.4 8.237 1.28 1.28 0 002.344 1.027 12.912 12.912 0 0111.983-7.458 12.913 12.913 0 0111.983 7.458 1.28 1.28 0 002.344-1.028 15.052 15.052 0 00-9.4-8.235 9.124 9.124 0 003.257-7.072c0-4.893-3.671-8.875-8.184-8.875a8.247 8.247 0 00-7.65 5.751 15.826 15.826 0 00-4.986-2.607 9.107 9.107 0 003.247-6.869zM14.433 53.215c-3.1 0-5.624-2.833-5.624-6.315s2.523-6.315 5.624-6.315a5.922 5.922 0 015.593 5.655c.021.236.031.446.031.66 0 3.482-2.523 6.315-5.624 6.315zm35.134-12.63c3.1 0 5.624 2.833 5.624 6.315s-2.523 6.315-5.624 6.315-5.624-2.833-5.624-6.315c0-.213.01-.423.028-.63.297-3.202 2.693-5.685 5.596-5.685zm0-25.225c3.1 0 5.624 2.833 5.624 6.315s-2.523 6.315-5.624 6.315-5.624-2.833-5.624-6.315c0-.212.01-.421.028-.627.297-3.205 2.693-5.688 5.596-5.688zM32 2.56c3.1 0 5.625 2.833 5.625 6.315S35.1 15.19 32 15.19s-5.624-2.833-5.624-6.315S28.9 2.56 32 2.56zm0 15.19a13.442 13.442 0 019.391 3.758c0 .056-.008.111-.008.168a9.125 9.125 0 003.257 7.07 15.838 15.838 0 00-4.887 2.525A8.281 8.281 0 0032 25.226a8.281 8.281 0 00-7.751 6.047 15.819 15.819 0 00-4.892-2.529 9.125 9.125 0 003.257-7.069c0-.056-.007-.11-.008-.166A13.461 13.461 0 0132 17.75zm-17.567-2.39a5.922 5.922 0 015.593 5.656c.021.238.031.447.031.659 0 3.482-2.523 6.315-5.624 6.315s-5.624-2.833-5.624-6.315 2.523-6.315 5.624-6.315zm17.594 25.053c-3.14-.016-5.649-2.841-5.649-6.313S28.9 27.785 32 27.785s5.625 2.833 5.625 6.315-2.51 6.3-5.6 6.313z" />
+                    </svg>
+                </div>
+                <div class=" flex flex-col items-center justify-around gap-2">
+                    <span class="text-[var(--text-gray)]">أكثر من</span>
+                    <h2 class="text-2xl font-bold text-[var(--yello-secondary)]">150000</h2>
+                    <span class="text-[var(--text-gray)]">عميل</span>
+                </div>
             </div>
-            <div class=" flex flex-col items-center justify-around gap-2">
-                <span class="text-[var(--text-gray)]">أكثر من</span>
-                <h2 class="text-2xl font-bold text-[var(--yello-secondary)]">150000</h2>
-                <span class="text-[var(--text-gray)]">عميل</span>
-            </div>
-        </div>
 
-    </div>
+        </div>
     </div>
 </section>
 
@@ -202,21 +203,21 @@
 
             <div class="col-lg-6 d-flex align-items-center w-[49%]">
                 <div class="about__text">
-                    <h2 class="text-[var(--dark-primary)] text-[33px] text-bold">
+                    <h2 class="text-[var(--dark-primary)] text-[33px] font-extrabold">
                         نخبة من الإستشاريين والأخصائيين
-                        <span class="text-[var(--yello-primary)] block">
+                        <span class="text-[var(--yello-primary)] block ">
                             في كافة التخصصات
                         </span>
                     </h2>
-                    <p class="text-[19px] text-[var(--dark-secondary )] " >
+                    <p class="text-[19px] text-[var(--dark-secondary)] font-bold ">
                         ستعيش تجربة فريدة من نوعها خلال فترة علاجك.
                     </p>
-                    <p class="text-[19px] text-[var(--dark-secondary)] mt-4">
+                    <p class="text-[19px] text-[var(--dark-secondary)] mt-4 font-bold text-wrap">
                         لأننا رواد في الرعاية الطبية ببيئة مريحة ورعاية متكاملة نقدمها لكم. نحن أيضا
                         نهدف إلى بناء جسور الثقة مع جميع عملائنا من خلال التعليم والتثقيف الصحي بالإضافة إلى المصداقية.
                     </p>
-                    <div class="mt-4 flex items-center justify-start " >
-                        <a href="#" class="text-[var(--yello-primary)] ">
+                    <div class="mt-4 flex items-center justify-start ">
+                        <a href="#" class="text-[var(--yello-primary)] font-bold ">
                             المزيد عن عيادات ماسترز
                             <div class="inline-block mr-2 rounded-xl bg-[var(--bg-white)] px-3 py-1">
                                 <i class="fa-solid fa-chevron-left text-[var(--yello-primary)]"></i>
@@ -229,16 +230,217 @@
 
             <div class="w-[49%] ">
                 <div class="flex items-center justify-center gap-4">
-                    <div class="rounded-2xl overflow-hidden" >
-                       <img src="{{asset('assets/images/header/about-1.jpg')}}" alt="about-1">
+                    <div class="rounded-2xl overflow-hidden">
+                        <img src="{{asset('assets/images/home/about-1.jpg')}}" alt="about-1">
                     </div>
-                    <div class="rounded-2xl overflow-hidden" >
-                        <img src="{{asset('assets/images/header/about-2.jpg')}}" alt="about-2">
+                    <div class="rounded-2xl overflow-hidden">
+                        <img src="{{asset('assets/images/home/about-2.jpg')}}" alt="about-2">
                     </div>
                 </div>
             </div>
 
         </div>
+        {{-- go to rate --}}
+        <div class=" w-2/3 mx-auto overflow-hidden mt-20 bg-no-repeat bg-cover bg-center px-6 py-8 rounded-2xl flex flex-col items-start gap-3"
+            style="background-image: url({{asset('assets/images/home/rate.webp')}})">
+            <div class="absolute top-0 left-0 bottom-0 right-0 w-full h-full"></div>
+            <span class="text-[12px] font-bold text-[var(--yello-primary)] ">
+                يسعدنا تقييم زيارتك للفروع
+            </span>
+            <h2 class=" text-[23px] font-bold text-[var(--dark-primary)] text-wrap w-[70%]">
+                هل قمت بزيارة عيادات ماسترز مؤخراً؟ <span class="text-[var(--yello-primary)]">قيم زيارتك الآن!</span>
+            </h2>
+            <p class="text-[15px] font-bold text-[var(--text-gray)] ">
+                قيم مستوى الخدمة التي قدمت إليك.
+            </p>
+        </div>
+    </div>
+</section>
+{{-- book now --}}
+<section class="mt-20 w-full flex items-center justify-center bg-[var(--yello-secondary)]">
+    <div class="container">
+        <div class="flex justify-between items-center py-16">
+            <div class="">
+                <h2 class="text-[27px] text-[var(--dark-primary) font-bold]">
+                    هل ترغب في حجز موعدك الآن؟
+                </h2>
+            </div>
+            <div class="">
+                <a href="#" class="bg-[var(--dark-primary)] text-white py-3 px-7 rounded-3xl font-bold">
+                    إحجز الآن
+                    <i class="fa-solid fa-calendar-days mr-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{-- services --}}
+<section class="w-full flex items-center justify-center mt-20">
+    <div class="container">
+
+        <div class="flex flex-col items-start gap-2">
+            <h2 class="text-[31px] font-bold text-[var(--dark-primary)]">
+                <span class="text-[var(--yello-primary)]">خدمات </span> عيادات ماسترز
+            </h2>
+            <p class="text-[var(--text-gray)] text-[15px] font-bold ">
+                ستعيش تجربة فريدة أثناء علاجك لأننا رواد في الرعاية الصحية مع بيئة مريحة و
+                الرعاية المتكاملة التي نقدمها لك.
+            </p>
+        </div>
+
+
+        <div class="flex items-center justify-between w-full mt-8 gap-3 ">
+            @php
+            $services = [
+            [
+            'title' => 'الأسنان',
+            'img' => asset('assets/images/home/service-1.jpg')
+            ],
+            [
+            'title' => 'الجلدية و التجميل و الليزر',
+            'img' => asset('assets/images/home/service-2.jpg')
+            ],
+            [
+            'title' => 'الطبي',
+            'img' => asset('assets/images/home/service-3.jpg')
+            ],
+            ];
+            @endphp
+
+            @foreach ($services as $service)
+            <a href="#" class="rounded-3xl overflow-hidden relative ">
+                <div class="service-img w-full">
+                    <img src="{{$service['img']}}" alt="service">
+                </div>
+                <div class="absolute bottom-0 right-0 w-full bg-none z-10">
+                    <h3 class="p-4 text-[19px] font-bold text-[var(--dark-primary)]">
+                        <span class="text-[var(--yello-primary)]"> خدمات </span>
+                        {{$service['title']}}
+                    </h3>
+                </div>
+            </a>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+{{-- payment --}}
+<section class="payment w-full flex items-center justify-center mt-20 bg-[#f3f9eb] relative">
+    {{-- <div class="w-full absolute top-0" style="background: url({{asset('assets/images/home/payment-border.svg')}})"
+    ></div> --}}
+    <div class="container">
+        <div class="flex w-full items-center justify-between gap-4 py-5">
+
+            <div class="flex flex-col w-[49%]">
+                <h2 class="text-[27px] text-[var(--dark-primary)] font-bold">
+                    إبتسم الآن، <span class="text-[var(--yello-primary)]">إدفع لاحقاً!</span> <br>
+                    قسط خدماتك <span class="text-[var(--yello-primary)]">بسعر الكاش.</span>
+                </h2>
+                <div class="flex flex-wrap w-full flex-row items-center justify-start gap-3 mt-5">
+                    <div
+                        class="max-w-[50%] flex items-center justify-center min-w-[200px] bg-white rounded-3xl px-6 py-2 max-h-[65px]">
+                        <img src="{{asset('assets/images/home/tasheel.webp')}}" alt="payment">
+                    </div>
+                    <div
+                        class="max-w-[50%] flex items-center justify-center min-w-[200px] bg-white rounded-3xl px-6 py-2 max-h-[65px]">
+                        <img src="{{asset('assets/images/home/Tabby.svg')}}" alt="payment">
+                    </div>
+                    <div
+                        class="max-w-[50%] flex items-center justify-center min-w-[200px] bg-white rounded-3xl px-6 py-2 max-h-[65px]">
+                        <img src="{{asset('assets/images/home/tamara.svg')}}" alt="payment">
+                    </div>
+                </div>
+
+                <div class="mt-10 ">
+                    <a href="#"
+                        class="rounded-3xl bg-[var(--yello-primary)] px-6 py-4 text-[15px] font-bold text-white">
+                        قسط خدماتك الآن
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="w-[49%] py-7">
+                <img src="{{asset('assets/images/home/payment.webp')}}" alt="payment">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{{-- doctors --}}
+<section class="w-full flex items-center justify-center mt-20">
+    <div class="container">
+        <div class="flex items-center justify-between py-4">
+            <h2 class="text-[31px] text-[var(--dark-primary)] font-bold">
+                أطباء <span class="text-[var(--yello-primary)]">عيادات ماسترز</span>
+            </h2>
+            <a href="#" class=" text-[15px] font-bold text-[var(--yello-primary)]">
+                عرض جميع اﻷطباء
+                <div class="inline-block mr-2 rounded-xl bg-[var(--bg-white)] px-3 py-1">
+                    <i class="fa-solid fa-chevron-left text-[var(--yello-primary)]"></i>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="swiper doctorsSlider swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl">
+            <div class="swiper-wrapper" id="swiper-wrapper-388fc33a10f2e2169" aria-live="off"
+                style="transition-duration: 0ms; transform: translate3d(4730px, 0px, 0px);">
+                @for ($i = 0; $i < 10; $i++)
+                    <div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="28 / 30"
+                        style="width: 299.333px; margin-left: 16px;" data-swiper-slide-index="27">
+                        <div class="doctor">
+
+                            <div class="doctor__image">
+                                <picture>
+                                    <source class="lazyload" src="/web/assets/images/placeholder.svg?v=255"
+                                        data-srcset="/uploads/doctors/2023/12/24/202312241106411482790109_doctors.jpg"
+                                        type="image/webp">
+                                    <img class="lazyload" src="/web/assets/images/placeholder.svg?v=255"
+                                        data-src="/uploads/doctors/2023/12/24/202312241106411482790109_doctors.jpg"
+                                        draggable="false" alt="عاصم حمد">
+                                </picture>
+                            </div>
+
+
+                            <div class="doctor__info">
+                                <h3 class="h5">د عاصم حمد</h3>
+                                <span class="doctor__department color d-block"> ماسترز الأسنان</span>
+                                <span class="doctor__branch d-block">ماسترز الأحساء الهفوف - خلف العثيم مول - حي
+                                    البستان</span>
+                            </div>
+
+
+                            <div class="doctor__actions d-flex justify-content-center">
+                                <a href="https://ramclinics.net/book-an-appointment?doctor=عاصم-حمد"
+                                    class="btn btn-brand-primary Booking_ads">
+                                    إحجز الآن
+                                    <svg class="btn-icon">
+                                        <use href="/web/assets/images/icons/icons.svg?v=255#book"></use>
+                                    </svg>
+                                </a>
+                                <a href="https://ramclinics.net/doctors/%D8%B9%D8%A7%D8%B5%D9%85-%D8%AD%D9%85%D8%AF"
+                                    class="btn btn-white">المزيد</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                @endfor
+
+            </div>
+            <div class="slider-controls">
+                <div class="swiper-button-next doctor-next" tabindex="0" role="button" aria-label="Next slide"
+                    aria-controls="swiper-wrapper-388fc33a10f2e2169"></div>
+                <div class="swiper-button-prev doctor-prev" tabindex="0" role="button" aria-label="Previous slide"
+                    aria-controls="swiper-wrapper-388fc33a10f2e2169"></div>
+            </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        </div>
+
     </div>
 </section>
 @endsection

@@ -9,11 +9,12 @@
         <link rel="stylesheet" href="{{asset('css/styles-Ar/header/index.css')}}">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         @yield('CssStyles')
+
     </head>
 
     <body>
         @include('layouts.header')
-        <main class="w-full flex flex-col items-center justify-center">
+        <main class="w-full flex flex-col items-center justify-center mb-20">
 
             @yield('container')
         </main>
@@ -21,6 +22,19 @@
 
         {{-- swiper --}}
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const swiper = new Swiper('.swiper', {
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            });
+        </script>
     </body>
 
 </html>
