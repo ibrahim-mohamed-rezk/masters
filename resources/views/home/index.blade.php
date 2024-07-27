@@ -2,6 +2,7 @@
 
 @section('CssStyles')
 <link rel="stylesheet" href="{{asset('css/styles-Ar/home/index.css')}}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 @endsection
 
 @section('container')
@@ -327,8 +328,6 @@
 
 {{-- payment --}}
 <section class="payment w-full flex items-center justify-center mt-20 bg-[#f3f9eb] relative">
-    {{-- <div class="w-full absolute top-0" style="background: url({{asset('assets/images/home/payment-border.svg')}})"
-    ></div> --}}
     <div class="container">
         <div class="flex w-full items-center justify-between gap-4 py-5">
 
@@ -386,61 +385,293 @@
         </div>
 
 
-        <div class="swiper doctorsSlider swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl">
-            <div class="swiper-wrapper" id="swiper-wrapper-388fc33a10f2e2169" aria-live="off"
-                style="transition-duration: 0ms; transform: translate3d(4730px, 0px, 0px);">
-                @for ($i = 0; $i < 10; $i++)
-                    <div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="28 / 30"
-                        style="width: 299.333px; margin-left: 16px;" data-swiper-slide-index="27">
-                        <div class="doctor">
+        <div class="swiper swiper1 w-full">
+            <div class="swiper-wrapper " id="swiper-wrapper-388fc33a10f2e2169" aria-live="off">
+                @for ($i = 0; $i < 10; $i++) <div
+                    class="swiper-slide  overflow-hidden rounded-2xl bg-[var(--bg-white)] p-2">
+                    <div class="">
 
-                            <div class="doctor__image">
-                                <picture>
-                                    <source class="lazyload" src="/web/assets/images/placeholder.svg?v=255"
-                                        data-srcset="/uploads/doctors/2023/12/24/202312241106411482790109_doctors.jpg"
-                                        type="image/webp">
-                                    <img class="lazyload" src="/web/assets/images/placeholder.svg?v=255"
-                                        data-src="/uploads/doctors/2023/12/24/202312241106411482790109_doctors.jpg"
-                                        draggable="false" alt="عاصم حمد">
-                                </picture>
-                            </div>
-
-
-                            <div class="doctor__info">
-                                <h3 class="h5">د عاصم حمد</h3>
-                                <span class="doctor__department color d-block"> ماسترز الأسنان</span>
-                                <span class="doctor__branch d-block">ماسترز الأحساء الهفوف - خلف العثيم مول - حي
-                                    البستان</span>
-                            </div>
-
-
-                            <div class="doctor__actions d-flex justify-content-center">
-                                <a href="https://ramclinics.net/book-an-appointment?doctor=عاصم-حمد"
-                                    class="btn btn-brand-primary Booking_ads">
-                                    إحجز الآن
-                                    <svg class="btn-icon">
-                                        <use href="/web/assets/images/icons/icons.svg?v=255#book"></use>
-                                    </svg>
-                                </a>
-                                <a href="https://ramclinics.net/doctors/%D8%B9%D8%A7%D8%B5%D9%85-%D8%AD%D9%85%D8%AF"
-                                    class="btn btn-white">المزيد</a>
-                            </div>
-
+                        <div class="rounded-2xl overflow-hidden">
+                            <img src="{{ asset('assets/images/home/doctor-slider.jpg') }}" alt="doctor">
                         </div>
-                    </div>
-                    
-                @endfor
 
+                        <div class="flex flex-col items-center justify-center mt-4 gap-1 px-2">
+                            <h3 class=" text-[15px] font-bold text-[var(--dark-primary)]">د. عاصم حمد</h3>
+                            <span class="block text-[13px] font-bold text-[var(--yello-primary)]">ماسترز الأسنان</span>
+                            <span class="text-[13px] font-bold text-[var(--text-gray)] text-center">ماسترز الأحساء
+                                الهفوف - خلف العثيم مول - حي
+                                البستان</span>
+                        </div>
+
+                        <div class="flex justify-center items-center flex-col px-2 pb-2">
+                            <div class="mt-4 w-full">
+                                <button type="button"
+                                    class="nav-bn text-white text-wrap focus:outline-none px-5 py-3 text-center font-bold w-full">إحجز
+                                    الآن<i class="fa-solid fa-calendar-days mr-3"></i></button>
+                            </div>
+                            <div class="mt-4 w-full">
+                                <button type="button"
+                                    class="rounded-[20px] bg-white text-[var(--text-gray)] text-wrap focus:outline-none px-5 py-3 text-center font-bold w-full">
+                                    المزيد</button>
+                            </div>
+                        </div>
+
+                    </div>
             </div>
-            <div class="slider-controls">
-                <div class="swiper-button-next doctor-next" tabindex="0" role="button" aria-label="Next slide"
-                    aria-controls="swiper-wrapper-388fc33a10f2e2169"></div>
-                <div class="swiper-button-prev doctor-prev" tabindex="0" role="button" aria-label="Previous slide"
-                    aria-controls="swiper-wrapper-388fc33a10f2e2169"></div>
-            </div>
-            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            @endfor
         </div>
+        <div class="slider-controls">
+            <div class="swiper-button-next doctor-slider-btn bg-white rounded-full !w-[40px] !h-[40px] " role="button"
+                aria-label="Next slide" aria-controls="swiper-wrapper-388fc33a10f2e2169"></div>
+            <div class="swiper-button-prev doctor-slider-btn bg-white rounded-full !w-[40px] !h-[40px] " tabindex="0"
+                role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-388fc33a10f2e2169"></div>
+        </div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div>
+
 
     </div>
 </section>
+
+{{-- customer review --}}
+<section class="w-full flex items-center justify-center mt-20">
+    <div class="container">
+
+        <h2 class="w-full text-[31px] font-bold text-[var(--dark-primary)]">
+            آراء <span class="text-[var(--yello-primary)]">عملاء ماسترز</span>
+        </h2>
+
+        <div class="flex items-center justify-between gap-2 mt-2">
+
+            <div class="w-[49%] h-[360px]">
+                <div class="swiper swiper2 w-full h-full ">
+                    <div class="swiper-wrapper" id="swiper-wrapper-910e1361011d375c94"
+                        style="transition-duration: 0ms; transform: translate3d(900px, 0px, 0px);">
+                        @for ($i = 0; $i < 10; $i++) <div
+                            class="swiper-slide bg-[var(--bg-white)] py-24 rounded-2xl overflow-hidden ">
+                            <div class="px-20">
+                                <div class="flex w-[18px] mx-auto mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.429 24" id="quote">
+                                        <defs>
+                                            <style>
+                                                .baa {
+                                                    fill: var(--yello-primary);
+                                                    width: 18px;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <path class="baa"
+                                            d="M24.857 0H18a2.572 2.572 0 00-2.571 2.571v6.857A2.572 2.572 0 0018 12h4.286v3.429a3.432 3.432 0 01-3.429 3.429h-.429a1.283 1.283 0 00-1.286 1.286v2.571a1.283 1.283 0 001.286 1.286h.429a8.569 8.569 0 008.571-8.571V2.571A2.572 2.572 0 0024.857 0zM9.428 0H2.571A2.572 2.572 0 000 2.571v6.857A2.572 2.572 0 002.571 12h4.286v3.429a3.432 3.432 0 01-3.429 3.429H3a1.283 1.283 0 00-1.286 1.286v2.571A1.283 1.283 0 003 24h.429A8.569 8.569 0 0012 15.429V2.571A2.572 2.572 0 009.429 0z" />
+                                    </svg>
+                                </div>
+                                <p class="text-[17px] text-[var(--text-gray)] font-semibold text-center">
+                                    الصراحة كل شي كان رائع من تعامل وترتيب وتنظيم والاخصائية فاطمة العسل شكرا مرا على
+                                    اسلوبك اللطيف ويدك الخفيفه ماشاءالله
+                                </p>
+                                <h6 class="text-[15px] text-[var(--yello-primary)] font-bold text-center mt-3">
+                                    أمل النعماني
+                                </h6>
+                                <div class="flex items-center justify-center gap-3 mt-2 ">
+                                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                    <i class="fa-solid fa-star text-[#ffc107]"></i>
+                                </div>
+                            </div>
+                    </div>
+                    @endfor
+                </div>
+                <div class="slider-controls">
+                    <div class="swiper-button-next doctor-slider-btn bg-white rounded-full !w-[40px] !h-[40px]"
+                        tabindex="0" role="button" aria-label="Next slide"
+                        aria-controls="swiper-wrapper-910e1361011d375c94"></div>
+                    <div class="swiper-button-prev doctor-slider-btn bg-white rounded-full !w-[40px] !h-[40px]"
+                        tabindex="0" role="button" aria-label="Previous slide"
+                        aria-controls="swiper-wrapper-910e1361011d375c94"></div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[49%] h-[360px] bg-[var(--bg-white)] rounded-2xl overflow-hidden cursor-pointer">
+            <div class="w-full relative overflow-hidden h-full" onclick="showModal()">
+                <div class="w-full overflow-hidden rounded-2xl h-full">
+                    <img class="w-full h-full rounded-2xl" src="{{asset('assets/images/home/video-thum.webp')}}"
+                        alt="video">
+                </div>
+                <div
+                    class="video-play absolute top-[50%] left-[50%] z-10 w-[40px] h-[40px] p-3 rounded-full bg-white translate-x-[-50%] translate-y-[-50%] flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18.286" id="play">
+                        <defs>
+                            <style>
+                                .aza {
+                                    fill: var(--yello-secondary)
+                                }
+                            </style>
+                        </defs>
+                        <path class="aza"
+                            d="M14.481 8.275a1 1 0 010 1.736L1.5 17.431a1 1 0 01-1.5-.868V1.723A1 1 0 011.5.855z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="modal w-full" id="video-modal">
+            <div
+                class="modal-dialog flex items-center justify-center w-1/2 bg-[var(--bg-white)] mx-auto rounded-3xl p-4 flex-col">
+                <div onclick="hideModal()" class="w-full flex items-center justify-start cursor-pointer pr-4 pb-4">
+                    <i class="fa-solid fa-x text-red-600"></i>
+                </div>
+                <div class="w-full">
+                    <iframe class="rounded-2xl" id="video-frame" width="100%" height="400px" src="" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</section>
+
+{{-- articals --}}
+<section class="w-full flex items-center justify-center mt-20">
+    <div class="container">
+        <div class="flex items-center justify-between py-4">
+            <h2 class="text-[31px] text-[var(--dark-primary)] font-bold">
+                أحدث <span class="text-[var(--yello-primary)]">المقالات </span>
+            </h2>
+            <a href="#" class=" text-[15px] font-bold text-[var(--yello-primary)]">
+                عرض جميع المقالات
+                <div class="inline-block mr-2 rounded-xl bg-[var(--bg-white)] px-3 py-1">
+                    <i class="fa-solid fa-chevron-left text-[var(--yello-primary)]"></i>
+                </div>
+            </a>
+        </div>
+
+        <div class="flex flex-wrap items-start justify-between w-full gap-5">
+            @for ($i = 0; $i < 8; $i++) <div class="w-[49%] ">
+                <div class="flex w-full items-center justify-start gap-4 p-4">
+                    <a href="#" class="">
+                        <img class="rounded-3xl" src="{{asset('assets/images/home/articals-1.jpg')}}" alt="artical">
+                    </a>
+                    <div class="flex flex-col items-start justify-start gap-2 pl-6">
+                        <a href="#" class="text-[12px] text-[var(--yello-primary)] font-bold">
+                            مقالات عامة
+                        </a>
+                        <a href="#">
+                            <h3 class="text-[15px] text-[var(--dark-secondary)] font-bold">كل ما تحتاج معرفته عن البوتكس
+                                وعيادات تجميل الأنف واسعار حقن بوتكس الأنف في
+                                السعودية</h3>
+                            <p class="mt-2 text-[15px] text-[var(--text-gray)] font-semibold">
+                                &nbsp;
+                                يُعد البوتكس من الإجراءات التجميلية الشائعة التي تُستخدم لتحسين مظهر الأنف وتصحيح بعض
+                                العيوب الطفيفة دون الحاجة إلى جراحة. السؤال عن متى تظهر نتائج البوتكس للأ </p>
+                            <span class="text-[12px] text-[var(--text-gray)] font-semibold">منذ 4 أيام</span>
+                        </a>
+                    </div>
+                </div>
+        </div>
+        @endfor
+    </div>
+    </div>
+</section>
+
+{{-- partners --}}
+<section class="w-full flex items-center justify-center mt-20">
+    <div class="container">
+        <h2 class="w-full text-center text-[31px] text-[var(--dark-primary)] font-bold">
+            شركاء
+            <span class="text-[var(--yello-primary)] ">النجاح</span>
+        </h2>
+        <div class="swiper swiper3 w-full mt-4">
+            <div class="swiper-wrapper" id="swiper-wrapper-41f2f6ebbd0cf8109">
+                @for ($i = 0; $i < 10; $i++) <div class="swiper-slide">
+                    <div class="flex items-center justify-center">
+                        <div class="max-w-[120px]">
+                            <img src="{{asset('assets/images/home/partners.webp')}}" alt="partners">
+                        </div>
+                    </div>
+            </div>
+            @endfor
+        </div>
+        <div class="slider-controls">
+            <div class="swiper-button-next doctor-slider-btn bg-white rounded-full !w-[40px] !h-[40px]"></div>
+            <div class="swiper-button-prev doctor-slider-btn bg-white rounded-full !w-[40px] !h-[40px]"></div>
+        </div>
+    </div>
+    </div>
+</section>
+@endsection
+@section('jsContainer')
+{{-- swiper --}}
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const swiper1 = new Swiper('.swiper1', {
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 16,
+        pagination: {
+            el: '.swiper1 .swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper1 .swiper-button-next',
+            prevEl: '.swiper1 .swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3000, 
+            disableOnInteraction: false, 
+        },
+    });
+
+    const swiper2 = new Swiper('.swiper2', {
+        loop: true,
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper2 .swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper2 .swiper-button-next',
+            prevEl: '.swiper2 .swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3500, 
+            disableOnInteraction: false, 
+        },
+    });
+
+    const swiper3 = new Swiper('.swiper3', {
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: 16,
+        pagination: {
+            el: '.swiper3 .swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper3 .swiper-button-next',
+            prevEl: '.swiper3 .swiper-button-prev',
+        },
+        autoplay: {
+            delay: 5000, 
+            disableOnInteraction: false, 
+        },
+    });
+});
+
+const showModal = () => {
+    const modal = document.querySelector('.modal');
+    const videoFrame = document.getElementById('video-frame');
+    modal.classList.add('modal-shwo');
+    document.body.classList.add('no-scroll');
+    videoFrame.src = "https://www.youtube.com/embed/TjKwU9WEwoQ"; 
+}
+
+const hideModal = () => {
+    const modal = document.querySelector('.modal');
+    const videoFrame = document.getElementById('video-frame');
+    modal.classList.remove('modal-shwo');
+    document.body.classList.remove('no-scroll');
+    videoFrame.src = "";
+}
+
+</script>
 @endsection
