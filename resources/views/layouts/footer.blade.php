@@ -11,60 +11,60 @@
         </svg>
     </div>
     <div class="container">
-        <div class=" flex flex-col items-center w-full">
+        <div class=" flex flex-col items-center w-full px-2">
             <div class="w-full">
-                <a href="#" class="flex items-start space-x-3 w-28">
-                    <img src="{{ asset('assets/images/logo/logo.avif') }}" class="" alt="Logo">
+                <a href="#" class="flex items-center justify-center sm:justify-start sm:items-start space-x-3 w-full">
+                    <img class="w-28" src="{{ asset('assets/images/logo/logo.avif') }}" class="" alt="Logo">
                 </a>
             </div>
 
             <div class="flex mt-7 w-full">
-                <div class="flex items-start justify-between gap-5 w-full">
-                    <div class="flex flex-col items-start justify-start gap-2">
-                        <h6 class="text-[15px] text-[var(--yello-primary)] font-bold">الوصول السريع:</h6>
-                        <ul class="flex flex-col gap-1">
-                            <li><a class="text-[var(--dark-primary)] font-semibold text-[13px]" href="#">الرئيسية</a>
+                <div class="flex items-start justify-between gap-8 w-full flex-wrap">
+                    <div class="flex flex-col items-start justify-start gap-2 w-full sm:w-[200px] ">
+                        <h6 class="text-[15px] text-[var(--yello-primary)] font-bold w-full text-center sm:text-right">الوصول السريع:</h6>
+                        <ul class="flex flex-col gap-1 w-full items-center justify-center sm:items-start sm:justify-start">
+                            <li><a class="text-[var(--dark-primary)] font-semibold text-[10px] md:text-[13px]" href="#">الرئيسية</a>
                             </li>
-                            <li><a class="text-[var(--dark-primary)] font-semibold text-[13px]" href="#">عن ماسترز</a>
+                            <li><a class="text-[var(--dark-primary)] font-semibold text-[10px] md:text-[13px]" href="#">عن ماسترز</a>
                             </li>
-                            <li><a class="text-[var(--dark-primary)] font-semibold text-[13px]" href="#">التقسيط بسعر
+                            <li><a class="text-[var(--dark-primary)] font-semibold text-[10px] md:text-[13px]" href="#">التقسيط بسعر
                                     الكاش</a></li>
-                            <li><a class="text-[var(--dark-primary)] font-semibold text-[13px]" href="#">الأطباء</a>
+                            <li><a class="text-[var(--dark-primary)] font-semibold text-[10px] md:text-[13px]" href="#">الأطباء</a>
                             </li>
-                            <li><a class="text-[var(--dark-primary)] font-semibold text-[13px]" href="#">الأخبار
+                            <li><a class="text-[var(--dark-primary)] font-semibold text-[10px] md:text-[13px]" href="#">الأخبار
                                     والمقالات</a></li>
-                            <li><a class="text-[var(--dark-primary)] font-semibold text-[13px]" href="#">سياسة
-                                    الخصوصية</a></li>
+                            <li><a class="text-[var(--dark-primary)] font-semibold text-[10px] md:text-[13px]" href="#">سياسة
+                                    الخصوصية</a></li> 
                         </ul>
                     </div>
-                    <div class="flex flex-col items-start justify-start gap-2">
-                        <h6 class="text-[15px] text-[var(--yello-primary)] font-bold">الخدمات:</h6>
-                        <ul class="flex flex-col gap-1">
+                    <div class="flex flex-col items-start justify-start gap-2 w-full sm:w-[200px] ">
+                        <h6 class="text-[15px] text-[var(--yello-primary)] font-bold w-full text-center sm:text-right">الخدمات:</h6>
+                        <ul class="flex flex-col gap-1 w-full items-center justify-center sm:items-start sm:justify-start">
                             <li>
-                                <atext-[var(--dark-primary)] font-semibold text-[13px] href="#">
+                                <a class="text-[var(--dark-primary)] font-semibold text-[10px] md:text-[13px]" href="#">
                                     خدمات الأسنان
                                     </a>
                             </li>
                             <li>
-                                <a text-[var(--dark-primary)] font-semibold text-[13px] href="#">
+                                <a class="text-[var(--dark-primary)] font-semibold text-[10px] md:text-[13px]" href="#">
                                     خدمات الجلدية و التجميل و الليزر
                                 </a>
                             </li>
                             <li>
-                                <a text-[var(--dark-primary)] font-semibold text-[13px] href="#">
+                                <a class="text-[var(--dark-primary)] font-semibold text-[10px] md:text-[13px]" href="#">
                                     خدمات الطبي
                                 </a>
                             </li>
-                            <li><a class="text-[var(--dark-primary)] font-semibold text-[13px]" href="#"> العروض</a>
+                            <li><a class="text-[var(--dark-primary)] font-semibold text-[10px] md:text-[13px]" href="#"> العروض</a>
                             </li>
-                            <li><a class="text-[var(--dark-primary)] font-semibold text-[13px]" href="#">الفروع</a></li>
+                            <li><a class="text-[var(--dark-primary)] font-semibold text-[10px] md:text-[13px]" href="#">الفروع</a></li>
                         </ul>
                     </div>
-                    <div class="flex flex-col items-start justify-start gap-2">
-                        <h6 class="text-[15px] text-[var(--yello-primary)] font-bold">الإتصال بنا:</h6>
-                        <ul class="flex flex-col gap-1">
+                    <div class="flex flex-col items-start justify-start gap-2 w-full sm:w-[200px] ">
+                        <h6 class="text-[15px] text-[var(--yello-primary)] font-bold w-full text-center sm:text-right">الإتصال بنا:</h6>
+                        <ul class="flex flex-col gap-1 w-full items-center justify-center sm:items-start sm:justify-start">
                             <li>
-                                <a text-[var(--dark-primary)] font-semibold text-[13px] href="#">
+                                <a class="text-[var(--dark-primary)] font-semibold text-[10px] md:text-[13px]" href="#">
                                      من نحن
                                 </a>
                             </li>
@@ -102,11 +102,11 @@
                 </div>
 
 
-                <div class="mt-10 flex items-start justify-start flex-col gap-2 w-full">
+                <div class="mt-10 flex items-center justify-center flex-col gap-2 w-full">
                     <h6 class="text-[var(--yello-primary)] font-bold text-[15px]">تابعنا على وسائل التواصل الإجتماعي
                     </h6>
                     <div class=" w-full mt-2">
-                        <ul class="social-list flex items-center justify-start gap-3">
+                        <ul class="social-list flex items-center justify-center gap-3">
                             <li
                                 class="text-[var(--yello-primary)] bg-white w-[35px] h-[35px] border rounded-full flex items-center justify-center cursor-pointer">
                                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>

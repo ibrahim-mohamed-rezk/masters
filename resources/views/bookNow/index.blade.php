@@ -5,21 +5,21 @@
 @endsection
 
 @section('container')
-<section class="w-full flex items-center justify-center mt-20">
+<section class="w-full flex items-center justify-center mt-20 px-2">
     <div class="container">
 
         <div class="flex flex-col items-start gap-2 w-full">
-            <h2 class="text-[31px] font-bold text-[var(--dark-primary)]">
+            <h2 class= "text-[20px]md:text-[31px] font-bold text-[var(--dark-primary)]">
                 إحجز موعدك <span class="text-[var(--yello-primary)]">الآن</span>
             </h2>
-            <p class="text-[var(--text-gray)] text-[15px] font-bold">
+            <p class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">
                 لحجز موعد مسبق في عيادات رام أدخل البيانات المطلوبة وسيتم التواصل معك من فريق خدمة العملاء لتأكيد الحجز.
             </p>
         </div>
 
-        <div class="flex items-center justify-between w-full mt-8">
+        <div class="flex flex-col md:flex-row items-center justify-between w-full mt-8">
 
-            <div class="flex items-center justify-center w-[60%]">
+            <div class="flex items-center justify-center w-full md:w-[60%]">
                 <form class="flex items-start justify-start flex-col w-full gap-3 p-1">
 
                     <h3 class="text-[19px] font-bold text-[var(--dark-primary)]">إختر القسم</h3>
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                     <div class="flex items-center justify-between w-full">
-                        <label class="text-[var(--text-gray)] text-[15px] font-bold">الخدمة</label>
+                        <label class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">الخدمة</label>
                         <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
                             <select class="w-full bg-transparent border-none outline-none" " 
                              required="">
@@ -46,7 +46,7 @@
                     </div>
                     <div class=" flex items-center justify-between w-full">
                                 <label for="bookBranch"
-                                    class="text-[var(--text-gray)] text-[15px] font-bold">المدينة</label>
+                                    class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">المدينة</label>
                                 <div
                                     class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
                                     <select class="w-full bg-transparent border-none outline-none" required="">
@@ -55,7 +55,7 @@
                                 </div>
                         </div>
                         <div class=" flex items-center justify-between w-full">
-                            <label for="bookBranch" class="text-[var(--text-gray)] text-[15px] font-bold">الفرع</label>
+                            <label for="bookBranch" class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">الفرع</label>
                             <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
                                 <select class="w-full bg-transparent border-none outline-none" required="">
                                     <option>إختر المدينة أولاً</option>
@@ -66,7 +66,7 @@
 
                         <h3 class="text-[19px] font-bold text-[var(--dark-primary)] mt-10">البيانات الشخصية</h3>
                         <div class="flex items-center justify-between w-full">
-                            <label for="bookName" class="text-[var(--text-gray)] text-[15px] font-bold">الاسم
+                            <label for="bookName" class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">الاسم
                                 بالكامل</label>
                             <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
                                 <input type="text" class="bg-transparent w-full border-none outline-none"
@@ -74,14 +74,14 @@
                             </div>
                         </div>
                         <div class="flex items-center justify-between w-full">
-                            <label for="bookPhone" class="text-[var(--text-gray)] text-[15px] font-bold">الجوال</label>
+                            <label for="bookPhone" class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">الجوال</label>
                             <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
                                 <input type="tel" class="bg-transparent border-none outline-none w-full" id="bookPhone"
                                     placeholder="أدخل رقم الجوال (05xxxxxxxx)." required="">
                             </div>
                         </div>
                         <div class="flex items-center justify-between w-full">
-                            <label for="bookEmail" class="text-[var(--text-gray)] text-[15px] font-bold">البريد
+                            <label for="bookEmail" class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">البريد
                                 الإلكتروني</label>
                             <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
                                 <input type="email" class="bg-transparent border-none outline-none w-full"
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                         <div class="flex items-center justify-between w-full">
-                            <label for="national_id" class="text-[var(--text-gray)] text-[15px] font-bold">رقم
+                            <label for="national_id" class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">رقم
                                 الهوية</label>
                             <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
                                 <input type="text" class="bg-transparent w-full border-none outline-none" maxlength="10"
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                         <div class="flex items-center justify-between w-full">
-                            <label for="bookDate" class="text-[var(--text-gray)] text-[15px] font-bold">التاريخ
+                            <label for="bookDate" class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">التاريخ
                                 المناسب</label>
                             <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
                                 <input onchange="return checkAvailableAppointment();" type="date"
@@ -106,7 +106,7 @@
                             </div>
                         </div>
                         <div class="flex items-center justify-between w-full">
-                            <label for="bookTime1" class="text-[var(--text-gray)] text-[15px] font-bold">التوقيت</label>
+                            <label for="bookTime1" class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">التوقيت</label>
                             <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
                                 <select class="w-full bg-transparent border-none outline-none" id="bookTime1"
                                     name="available_time" required="">
@@ -127,7 +127,7 @@
             </div>
 
 
-            <div class="w-[35%] rounded-3xl overflow-hidden min-h-[800px]">
+            <div class="w-full md:w-[35%] rounded-3xl overflow-hidden min-h-[800px]">
                 <img class="h-[100%] min-h-[800px]" src="{{asset('assets/images/bookNow/book.webp')}}" alt="">
             </div>
 
@@ -138,7 +138,7 @@
 {{-- partners --}}
 <section class="w-full flex items-center justify-center mt-20">
     <div class="container">
-        <h2 class="w-full text-center text-[31px] text-[var(--dark-primary)] font-bold">
+        <h2 class="w-full text-center text-[20px] md:text-[31px] text-[var(--dark-primary)] font-bold">
             شركاء
             <span class="text-[var(--yello-primary)] ">النجاح</span>
         </h2>
