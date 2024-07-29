@@ -6,6 +6,12 @@
     font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
+.doctor-slider-btn::after {
+    font-size: 13px !important;
+    color: var(--yello-secondary) !important;
+    font-weight: 700 !important;
+}
+
 :root {
     --yello-primary: #c8972d;
     --yello-secondary: #eec230;

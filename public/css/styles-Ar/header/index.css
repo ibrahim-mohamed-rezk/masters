@@ -1,48 +1,13 @@
 
-.header{
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 800px;
-
-    .social{
-    
-        .social-list{
-    
-            .social-icon{
-                color: var(--yello-primary);
-                background: var(--white-primary);
-                width: 35px;
-                height: 35px;
-            }
-        }
-
-    }
-
-    .news{
-        .news__ribbon{
-            background: var(--yello-primary);
-            border-radius: 20px;
-            padding: 5px 10px;
-            animation: fade .5s ease-in-out infinite;
-        }
-
-        .news__text{
-            color: var(--yello-primary);
-        }
-    }
-
-    .reach *{
-        font-family: "IBM Plex Sans", sans-serif;
-        font-weight: 400;
-        color: var(--dark-secondary);
-    }
+.news__ribbon{
+    animation: fade .5s ease-in-out infinite;
 }
 
-.nav-bn{
-    background-color: var(--yello-primary);
-    border-radius: 20px;
+.reach *{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    color: var(--dark-secondary);
 }
-
 
 
 @keyframes fade {
