@@ -9,10 +9,10 @@
     <div class="container">
 
         <div class="flex flex-col items-start gap-2 w-full">
-            <h2 class= "text-[20px]md:text-[31px] font-bold text-[var(--dark-primary)]">
+            <h2 class= "fade-up text-[20px]md:text-[31px] font-bold text-[var(--dark-primary)]">
                 إحجز موعدك <span class="text-[var(--yello-primary)]">الآن</span>
             </h2>
-            <p class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">
+            <p class="fade-up text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">
                 لحجز موعد مسبق في عيادات رام أدخل البيانات المطلوبة وسيتم التواصل معك من فريق خدمة العملاء لتأكيد الحجز.
             </p>
         </div>
@@ -22,9 +22,9 @@
             <div class="flex items-center justify-center w-full md:w-[60%]">
                 <form class="flex items-start justify-start flex-col w-full gap-3 p-1">
 
-                    <h3 class="text-[19px] font-bold text-[var(--dark-primary)]">إختر القسم</h3>
+                    <h3 class="text-[19px] font-bold text-[var(--dark-primary)] fade-up">إختر القسم</h3>
 
-                    <div class="flex items-center justify-between w-full">
+                    <div class="flex items-center justify-between w-full fade-up">
                         <label class="text-[var(--text-gray)] text-[14px] font-bold ">القسم</label>
                         <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
                             <select class="w-full bg-transparent border-none outline-none" required="">
@@ -35,7 +35,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="flex items-center justify-between w-full">
+                    <div class="flex items-center justify-between w-full fade-up">
                         <label class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">الخدمة</label>
                         <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
                             <select class="w-full bg-transparent border-none outline-none" " 
@@ -44,7 +44,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class=" flex items-center justify-between w-full">
+                    <div class=" flex items-center justify-between w-full fade-up" >
                                 <label for="bookBranch"
                                     class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">المدينة</label>
                                 <div
@@ -54,7 +54,7 @@
                                     </select>
                                 </div>
                         </div>
-                        <div class=" flex items-center justify-between w-full">
+                        <div class=" flex items-center justify-between w-full fade-up" >
                             <label for="bookBranch" class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">الفرع</label>
                             <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
                                 <select class="w-full bg-transparent border-none outline-none" required="">
@@ -64,8 +64,8 @@
                         </div>
 
 
-                        <h3 class="text-[19px] font-bold text-[var(--dark-primary)] mt-10">البيانات الشخصية</h3>
-                        <div class="flex items-center justify-between w-full">
+                        <h3 class="text-[19px] font-bold text-[var(--dark-primary)] mt-10 fade-up">البيانات الشخصية</h3>
+                        <div class="flex items-center justify-between w-full fade-up">
                             <label for="bookName" class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">الاسم
                                 بالكامل</label>
                             <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
@@ -73,14 +73,14 @@
                                     placeholder="أدخل الإسم بالكامل" required="">
                             </div>
                         </div>
-                        <div class="flex items-center justify-between w-full">
+                        <div class="flex items-center justify-between w-full fade-up">
                             <label for="bookPhone" class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">الجوال</label>
                             <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
                                 <input type="tel" class="bg-transparent border-none outline-none w-full" id="bookPhone"
                                     placeholder="أدخل رقم الجوال (05xxxxxxxx)." required="">
                             </div>
                         </div>
-                        <div class="flex items-center justify-between w-full">
+                        <div class="flex items-center justify-between w-full fade-up">
                             <label for="bookEmail" class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">البريد
                                 الإلكتروني</label>
                             <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
@@ -88,7 +88,7 @@
                                     id="bookEmail" placeholder="أدخل البريد الإلكتروني" required="">
                             </div>
                         </div>
-                        <div class="flex items-center justify-between w-full">
+                        <div class="flex items-center justify-between w-full fade-up">
                             <label for="national_id" class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">رقم
                                 الهوية</label>
                             <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
@@ -96,7 +96,7 @@
                                     id="national_id" placeholder="أدخل رقم الهوية xxxxxxxxxx" name="national_id">
                             </div>
                         </div>
-                        <div class="flex items-center justify-between w-full">
+                        <div class="flex items-center justify-between w-full fade-up">
                             <label for="bookDate" class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">التاريخ
                                 المناسب</label>
                             <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
@@ -105,7 +105,7 @@
                                     value="2024-07-28" id="bookDate" required="" min="2024-07-28">
                             </div>
                         </div>
-                        <div class="flex items-center justify-between w-full">
+                        <div class="flex items-center justify-between w-full fade-up">
                             <label for="bookTime1" class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">التوقيت</label>
                             <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
                                 <select class="w-full bg-transparent border-none outline-none" id="bookTime1"
@@ -117,7 +117,7 @@
                             </div>
                         </div>
 
-                        <div class="flex items-center justify-center w-full mt-8">
+                        <div class="flex items-center justify-center w-full mt-8 fade-up">
                             <button type="button"
                                 class="nav-bn text-white text-wrap focus:outline-none px-5 py-3 text-center font-bold">
                                 إحجز موعدك الآن<i class="fa-solid fa-calendar-days mr-3"></i></button>
@@ -127,7 +127,7 @@
             </div>
 
 
-            <div class="w-full md:w-[35%] rounded-3xl overflow-hidden min-h-[800px]">
+            <div class="w-full md:w-[35%] rounded-3xl overflow-hidden min-h-[800px] fade-up ">
                 <img class="h-[100%] min-h-[800px]" src="{{asset('assets/images/bookNow/book.webp')}}" alt="">
             </div>
 
@@ -138,11 +138,11 @@
 {{-- partners --}}
 <section class="w-full flex items-center justify-center mt-20">
     <div class="container">
-        <h2 class="w-full text-center text-[20px] md:text-[31px] text-[var(--dark-primary)] font-bold">
+        <h2 class="w-full text-center text-[20px] md:text-[31px] text-[var(--dark-primary)] font-bold fade-up ">
             شركاء
             <span class="text-[var(--yello-primary)] ">النجاح</span>
         </h2>
-        <div class="swiper swiper4 w-full mt-4">
+        <div class="swiper swiper4 w-full mt-4 fade-up ">
             <div class="swiper-wrapper" id="swiper-wrapper-41f2f6ebbd0cf81091">
                 @for ($i = 0; $i < 10; $i++) <div class="swiper-slide">
                     <div class="flex items-center justify-center">

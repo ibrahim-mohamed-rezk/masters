@@ -7,7 +7,7 @@
         @vite('resources/css/app.css')
         <link rel="stylesheet" href="{{asset('css/styles-Ar/styles.css')}}">
         <link rel="stylesheet" href="{{asset('css/styles-Ar/header/index.css')}}">
-        
+
         @yield('CssStyles')
 
     </head>
@@ -18,6 +18,29 @@
             @yield('container')
         </main>
         @include('layouts.footer')
+
+
+        {{-- Animate.css --}}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+    
+            gsap.utils.toArray('.fade-up').forEach((fadeUpElement) => {
+                gsap.to(fadeUpElement, {
+                    scrollTrigger: {
+                        trigger: fadeUpElement,
+                        start: 'top 85%', 
+                        toggleActions: 'play none none none' 
+                    },
+                    opacity: 1,
+                    y: 0,
+                    duration: .8,
+                    ease: 'power2.out',
+                    stagger: 0.3 
+                });
+            });
+        </script>
         @yield('jsContainer')
 
     </body>

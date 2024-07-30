@@ -8,29 +8,37 @@
                 <div class="top-bar__container w-full flex items-center justify-between py-5">
                     <div class="social">
                         <ul class="social-list flex items-center justify-center gap-3">
-                            <li class="text-[var(--yello-primary)] bg-[var(--white-primary)] lg:w-[35px] md:w-[25px] lg:h-[35px] md:h-[25px] w-[20px] h-[20px] text-[12px] md:text-[15px] lg:text-[18px] border rounded-full flex items-center justify-center cursor-pointer">
+                            <li
+                                class="text-[var(--yello-primary)] bg-[var(--white-primary)] lg:w-[35px] md:w-[25px] lg:h-[35px] md:h-[25px] w-[20px] h-[20px] text-[12px] md:text-[15px] lg:text-[18px] border rounded-full flex items-center justify-center cursor-pointer">
                                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                             </li>
-                            <li class="text-[var(--yello-primary)] bg-[var(--white-primary)] lg:w-[35px] md:w-[25px] lg:h-[35px] md:h-[25px] w-[20px] h-[20px] text-[12px] md:text-[15px] lg:text-[18px] border rounded-full flex items-center justify-center cursor-pointer">
+                            <li
+                                class="text-[var(--yello-primary)] bg-[var(--white-primary)] lg:w-[35px] md:w-[25px] lg:h-[35px] md:h-[25px] w-[20px] h-[20px] text-[12px] md:text-[15px] lg:text-[18px] border rounded-full flex items-center justify-center cursor-pointer">
                                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                             </li>
-                            <li class="text-[var(--yello-primary)] bg-[var(--white-primary)] lg:w-[35px] md:w-[25px] lg:h-[35px] md:h-[25px] w-[20px] h-[20px] text-[12px] md:text-[15px] lg:text-[18px] border rounded-full flex items-center justify-center cursor-pointer">
+                            <li
+                                class="text-[var(--yello-primary)] bg-[var(--white-primary)] lg:w-[35px] md:w-[25px] lg:h-[35px] md:h-[25px] w-[20px] h-[20px] text-[12px] md:text-[15px] lg:text-[18px] border rounded-full flex items-center justify-center cursor-pointer">
                                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                             </li>
-                            <li class="text-[var(--yello-primary)] bg-[var(--white-primary)] lg:w-[35px] md:w-[25px] lg:h-[35px] md:h-[25px] w-[20px] h-[20px] text-[12px] md:text-[15px] lg:text-[18px] border rounded-full flex items-center justify-center cursor-pointer">
+                            <li
+                                class="text-[var(--yello-primary)] bg-[var(--white-primary)] lg:w-[35px] md:w-[25px] lg:h-[35px] md:h-[25px] w-[20px] h-[20px] text-[12px] md:text-[15px] lg:text-[18px] border rounded-full flex items-center justify-center cursor-pointer">
                                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
                             </li>
-                            <li class="text-[var(--yello-primary)] bg-[var(--white-primary)] lg:w-[35px] md:w-[25px] lg:h-[35px] md:h-[25px] w-[20px] h-[20px] text-[12px] md:text-[15px] lg:text-[18px] border rounded-full flex items-center justify-center cursor-pointer">
+                            <li
+                                class="text-[var(--yello-primary)] bg-[var(--white-primary)] lg:w-[35px] md:w-[25px] lg:h-[35px] md:h-[25px] w-[20px] h-[20px] text-[12px] md:text-[15px] lg:text-[18px] border rounded-full flex items-center justify-center cursor-pointer">
                                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                             </li>
-                            <li class="text-[var(--yello-primary)] bg-[var(--white-primary)] lg:w-[35px] md:w-[25px] lg:h-[35px] md:h-[25px] w-[20px] h-[20px] text-[12px] md:text-[15px] lg:text-[18px] border rounded-full flex items-center justify-center cursor-pointer">
+                            <li
+                                class="text-[var(--yello-primary)] bg-[var(--white-primary)] lg:w-[35px] md:w-[25px] lg:h-[35px] md:h-[25px] w-[20px] h-[20px] text-[12px] md:text-[15px] lg:text-[18px] border rounded-full flex items-center justify-center cursor-pointer">
                                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                             </li>
                         </ul>
                     </div>
 
                     <a href="#" class="news flex items-center justify-center gap-3">
-                        <span class="news__ribbon bg-[var(--yello-primary)] rounded-3xl py-[5px] px-[10px] font-bold text-white text-wrap">متاح الآن</span>
+                        <span
+                            class="news__ribbon bg-[var(--yello-primary)] rounded-3xl py-[5px] px-[10px] font-bold text-white text-wrap">متاح
+                            الآن</span>
                         <span class="text-[var(--yello-primary)] font-bold ">عروض الصيف</span>
                     </a>
 
@@ -44,9 +52,9 @@
             </div>
         </div>
 
-        <nav class="w-full z-20">
+        <nav class="w-full z-20 fade-up">
             <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
-                <a href="#" class="flex items-center space-x-3 w-28">
+                <a href="/" class="flex items-center space-x-3 w-28">
                     <img src="{{ asset('assets/images/logo/logo.avif') }}" class="" alt="Logo">
                 </a>
                 <div class="flex md:order-2 space-x-3 md:space-x-0">
@@ -91,7 +99,7 @@
             </div>
         </nav>
 
-        <div class="mt-52 w-full flex flex-col justify-around items-start ">
+        <div class="mt-52 w-full flex flex-col justify-around items-start fade-up">
             <h3 class="font-bold text-[28px] text-[var(--dark-secondary)]">
                 إستمتعي <span class="text-[var(--yello-primary)] text-wrap">بالجمال</span> الآن ومدى الحياة
             </h3>
@@ -101,7 +109,7 @@
             <div class="mt-4">
                 <a href="/book-now">
                     <button type="button"
-                        class="nav-bn text-white text-wrap focus:outline-none px-5 py-3 text-center font-bold">إحجز
+                        class="bg-[var(--yello-primary)] rounded-3xl text-white text-wrap focus:outline-none px-5 py-3 text-center font-bold">إحجز
                         الآن<i class="fa-solid fa-calendar-days mr-3"></i></button></a>
             </div>
         </div>

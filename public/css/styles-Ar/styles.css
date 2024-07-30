@@ -12,6 +12,11 @@
     font-weight: 700 !important;
 }
 
+.fade-up {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
 :root {
     --yello-primary: #c8972d;
     --yello-secondary: #eec230;

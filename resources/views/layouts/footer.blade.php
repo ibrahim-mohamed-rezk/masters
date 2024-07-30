@@ -12,14 +12,14 @@
     </div>
     <div class="container">
         <div class=" flex flex-col items-center w-full px-2">
-            <div class="w-full">
+            <div class="w-full fade-up">
                 <a href="#" class="flex items-center justify-center sm:justify-start sm:items-start space-x-3 w-full">
                     <img class="w-28" src="{{ asset('assets/images/logo/logo.avif') }}" class="" alt="Logo">
                 </a>
             </div>
 
             <div class="flex mt-7 w-full">
-                <div class="flex items-start justify-between gap-8 w-full flex-wrap">
+                <div class="flex items-start justify-between gap-8 w-full flex-wrap fade-up">
                     <div class="flex flex-col items-start justify-start gap-2 w-full sm:w-[200px] ">
                         <h6 class="text-[15px] text-[var(--yello-primary)] font-bold w-full text-center sm:text-right">الوصول السريع:</h6>
                         <ul class="flex flex-col gap-1 w-full items-center justify-center sm:items-start sm:justify-start">
@@ -77,9 +77,9 @@
             <div class="w-full mt-10 ">
 
                 <div class="flex flex-col ">
-                    <h6 class="text-[var(--yello-primary)] font-bold text-[15px]">إشترك لتصلك أحدث عروض وخدمات ماسترز
+                    <h6 class="text-[var(--yello-primary)] font-bold text-[15px] fade-up">إشترك لتصلك أحدث عروض وخدمات ماسترز
                         الطبية:</h6>
-                    <form class="flex items-center justify-start w-full rounded-3xl bg-white mt-3 p-3 ">
+                    <form class="flex items-center justify-start w-full rounded-3xl bg-white mt-3 p-3 fade-up">
                         <div class="flex w-full gap-2">
                             <label for="subscribeForm" class="sr-only">أدخل رقم الجوال</label>
                             <span class="flex w-[15px]">
@@ -102,7 +102,7 @@
                 </div>
 
 
-                <div class="mt-10 flex items-center justify-center flex-col gap-2 w-full">
+                <div class="mt-10 flex items-center justify-center flex-col gap-2 w-full fade-up">
                     <h6 class="text-[var(--yello-primary)] font-bold text-[15px]">تابعنا على وسائل التواصل الإجتماعي
                     </h6>
                     <div class=" w-full mt-2">

@@ -14,7 +14,7 @@
                 <div class="flex items-center justify-around w-full gap-4 flex-col lg:flex-row px-2">
 
                     <div
-                        class="flex rounded-full bg-[var(--dark-primary)] lg:w-1/3 md:w-2/3 px-9 py-4 items-center gap-2 w-full ">
+                        class="flex rounded-full bg-[var(--dark-primary)] lg:w-1/3 md:w-2/3 px-9 py-4 items-center gap-2 w-full fade-up ">
                         <div class="w-[25px] flex items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="dental" class="w-[24px] ">
                                 <defs>
@@ -44,7 +44,7 @@
 
 
                     <div
-                        class="flex rounded-full bg-[var(--dark-primary)] lg:w-1/3 md:w-2/3 px-9 py-4 items-center gap-2 w-full">
+                        class="flex rounded-full bg-[var(--dark-primary)] lg:w-1/3 md:w-2/3 px-9 py-4 items-center gap-2 w-full fade-up">
                         <div class="w-[25px] flex items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.055 32" id="derma"
                                 class="w-[24px] ">
@@ -86,7 +86,7 @@
 
 
                     <div
-                        class="flex rounded-full bg-[var(--dark-primary)] lg:w-1/3 md:w-2/3 px-9 py-4 items-center gap-2 w-full">
+                        class="flex rounded-full bg-[var(--dark-primary)] lg:w-1/3 md:w-2/3 px-9 py-4 items-center gap-2 w-full fade-up">
                         <div class="w-[25px] flex items-center justify-center ">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.806 32" id="medical"
                                 class="w-[24px] ">
@@ -125,7 +125,7 @@
         <div class="statistics__container  flex flex-wrap items-center justify-center gap-4 mt-12 px-2">
 
             <div
-                class="flex items-center justify-between w-full md:w-[45%] lg:w-[30%] min-w-[220px] bg-[var(--bg-white)] px-4 py-3 rounded-2xl min-h-[140px]">
+                class="flex items-center justify-between w-full md:w-[45%] lg:w-[30%] min-w-[220px] bg-[var(--bg-white)] px-4 py-3 rounded-2xl min-h-[140px] fade-up">
                 <div class="w-[40%] px-5">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="country">
                         <defs>
@@ -151,7 +151,7 @@
             </div>
 
             <div
-                class="flex items-center justify-between w-full md:w-[45%] lg:w-[30%] min-w-[220px] bg-[var(--bg-white)] px-4 py-3 rounded-2xl min-h-[140px]">
+                class="flex items-center justify-between w-full md:w-[45%] lg:w-[30%] min-w-[220px] bg-[var(--bg-white)] px-4 py-3 rounded-2xl min-h-[140px] fade-up">
                 <div class="w-[40%] px-5">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.612 64" id="doctor">
                         <defs>
@@ -176,7 +176,7 @@
 
 
             <div
-                class="flex items-center justify-between w-full md:w-[45%] lg:w-[30%] min-w-[220px] bg-[var(--bg-white)] px-4 py-3 rounded-2xl min-h-[140px]">
+                class="flex items-center justify-between w-full md:w-[45%] lg:w-[30%] min-w-[220px] bg-[var(--bg-white)] px-4 py-3 rounded-2xl min-h-[140px] fade-up">
                 <div class=" w-[40%] px-5">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="client">
                         <defs>
@@ -209,22 +209,22 @@
             <div class="col-lg-6 d-flex align-items-center w-full lg:w-[49%]">
                 <div class="about__text">
                     <h2
-                        class="text-[var(--dark-primary)] text-center lg:text-right text-[20px] lg:text-[33px] font-extrabold">
+                        class="text-[var(--dark-primary)] text-center lg:text-right text-[20px] lg:text-[33px] font-extrabold fade-up">
                         نخبة من الإستشاريين والأخصائيين
                         <span class="text-[var(--yello-primary)] block ">
                             في كافة التخصصات
                         </span>
                     </h2>
                     <p
-                        class="text-[14px] lg:text-[19px] text-[var(--dark-secondary)] font-bold text-center lg:text-right">
+                        class="text-[14px] lg:text-[19px] text-[var(--dark-secondary)] font-bold text-center lg:text-right fade-up">
                         ستعيش تجربة فريدة من نوعها خلال فترة علاجك.
                     </p>
                     <p
-                        class="text-[14px] lg:text-[19px] text-[var(--dark-secondary)] mt-4 font-bold text-wrap text-center lg:text-right">
+                        class="text-[14px] lg:text-[19px] text-[var(--dark-secondary)] mt-4 font-bold text-wrap text-center lg:text-right fade-up">
                         لأننا رواد في الرعاية الطبية ببيئة مريحة ورعاية متكاملة نقدمها لكم. نحن أيضا
                         نهدف إلى بناء جسور الثقة مع جميع عملائنا من خلال التعليم والتثقيف الصحي بالإضافة إلى المصداقية.
                     </p>
-                    <div class="mt-4 flex items-center justify-start ">
+                    <div class="mt-4 flex items-center justify-start fade-up">
                         <a href="#" class="text-[var(--yello-primary)] font-bold ">
                             المزيد عن عيادات ماسترز
                             <div class="inline-block mr-2 rounded-xl bg-[var(--bg-white)] px-3 py-1">
@@ -236,7 +236,7 @@
             </div>
 
 
-            <div class="w-full lg:w-[49%] mt-4 lg:mt-0 ">
+            <div class="w-full lg:w-[49%] mt-4 lg:mt-0 fade-up">
                 <div class="flex items-center justify-center gap-4">
                     <div class="rounded-2xl overflow-hidden">
                         <img src="{{asset('assets/images/home/about-1.jpg')}}" alt="about-1">
@@ -251,7 +251,7 @@
         {{-- go to rate --}}
         <div class="px-2">
 
-            <div class=" w-full lg:w-2/3 mx-auto overflow-hidden mt-20 bg-no-repeat bg-cover bg-center px-6 py-8 rounded-2xl flex flex-col items-start gap-3"
+            <div class=" w-full lg:w-2/3 mx-auto overflow-hidden mt-20 bg-no-repeat bg-cover bg-center px-6 py-8 rounded-2xl flex flex-col items-start gap-3 fade-up"
                 style="background-image: url({{asset('assets/images/home/rate.webp')}})">
                 <div class="absolute top-0 left-0 bottom-0 right-0 w-full h-full"></div>
                 <span class="text-[12px] font-bold text-[var(--yello-primary)] ">
@@ -261,7 +261,7 @@
                     هل قمت بزيارة عيادات ماسترز مؤخراً؟ <span class="text-[var(--yello-primary)]">قيم زيارتك
                         الآن!</span>
                 </h2>
-                <p class= text-[12px]"md:text-[15px] font-bold text-[var(--text-gray)] ">
+                <p class= "text-[12px]md:text-[15px] font-bold text-[var(--text-gray)] ">
                     قيم مستوى الخدمة التي قدمت إليك.
                 </p>
             </div>
@@ -270,7 +270,7 @@
     </div>
 </section>
 {{-- book now --}}
-<section class="mt-20 w-full flex items-center justify-center bg-[var(--yello-secondary)]">
+<section class="mt-20 w-full flex items-center justify-center bg-[var(--yello-secondary)] fade-up">
     <div class="container">
         <div class="flex justify-between items-center py-16 flex-col lg:flex-row md:flex-row gap-8">
             <div class="">
@@ -293,17 +293,17 @@
     <div class="container">
 
         <div class="flex flex-col items-start gap-2 w-full px-2">
-            <h2 class="w-full text-[20px] md:text-[31px] font-bold text-[var(--dark-primary)] text-center md:text-right">
+            <h2 class="w-full text-[20px] md:text-[31px] font-bold text-[var(--dark-primary)] text-center md:text-right fade-up">
                 <span class="text-[var(--yello-primary)]">خدمات </span> عيادات ماسترز
             </h2>
-            <p class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold md:text-right">
+            <p class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold md:text-right fade-up">
                 ستعيش تجربة فريدة أثناء علاجك لأننا رواد في الرعاية الصحية مع بيئة مريحة و
                 الرعاية المتكاملة التي نقدمها لك.
             </p>
         </div>
 
 
-        <div class="flex items-center justify-between w-full mt-8 gap-3 flex-wrap md:flex-nowrap lg:flex-nowrap px-2 ">
+        <div class="flex items-center justify-between w-full mt-8 gap-3 flex-wrap md:flex-nowrap lg:flex-nowrap px-2 fade-up">
             @php
             $services = [
             [
@@ -341,7 +341,7 @@
 {{-- payment --}}
 <section class="payment w-full flex items-center justify-center mt-20 bg-[#f3f9eb] relative">
     <div class="container">
-        <div class="flex w-full items-center justify-between gap-4 py-5 flex-col md:flex-row px-2">
+        <div class="flex w-full items-center justify-between gap-4 py-5 flex-col md:flex-row px-2 fade-up">
 
             <div class="flex flex-col w-full md:w-[49%] items-center justify-center md:justify-start md:items-start">
                 <h2 class="text-[20px] md:text-[27px] text-[var(--dark-primary)] font-bold">
@@ -384,7 +384,7 @@
 {{-- doctors --}}
 <section class="w-full flex items-center justify-center mt-20">
     <div class="container">
-        <div class="flex items-center justify-between py-4 px-2">
+        <div class="flex items-center justify-between py-4 px-2 fade-up">
             <h2 class="text-[20px] md:text-[31px] text-[var(--dark-primary)] font-bold">
                 أطباء <span class="text-[var(--yello-primary)]">عيادات ماسترز</span>
             </h2>
@@ -397,7 +397,7 @@
         </div>
 
 
-        <div class="swiper swiper1 w-full px-2">
+        <div class="swiper swiper1 w-full px-2 fade-up">
             <div class="swiper-wrapper " id="swiper-wrapper-388fc33a10f2e2169" aria-live="off">
                 @for ($i = 0; $i < 10; $i++) <div
                     class="swiper-slide  overflow-hidden rounded-2xl bg-[var(--bg-white)] p-2">
@@ -449,11 +449,11 @@
 <section class="w-full flex items-center justify-center mt-20">
     <div class="container">
 
-        <h2 class="w-full text-[20px] md:text-[31px] font-bold text-[var(--dark-primary)] text-center md:text-right mt-4">
+        <h2 class="w-full text-[20px] md:text-[31px] font-bold text-[var(--dark-primary)] text-center md:text-right mt-4 fade-up">
             آراء <span class="text-[var(--yello-primary)]">عملاء ماسترز</span>
         </h2>
 
-        <div class="flex items-center justify-between mt-2 flex-col md:flex-row gap-5 px-2">
+        <div class="flex items-center justify-between mt-2 flex-col md:flex-row gap-5 px-2 fade-up">
 
             <div class="w-full md:w-[49%] h-[360px]">
                 <div class="swiper swiper2 w-full h-full ">
@@ -547,7 +547,7 @@
 {{-- articals --}}
 <section class="w-full flex items-center justify-center mt-20">
     <div class="container">
-        <div class="flex items-center justify-between py-4 px-2">
+        <div class="flex items-center justify-between py-4 px-2 fade-up">
             <h2 class="text-[20px] md:text-[31px] text-[var(--dark-primary)] font-bold">
                 أحدث <span class="text-[var(--yello-primary)]">المقالات </span>
             </h2>
@@ -561,7 +561,7 @@
 
         <div class="flex flex-wrap items-start justify-between w-full gap-5">
             @for ($i = 0; $i < 8; $i++) <div class="w-full lg:w-[48%] ">
-                <div class="flex w-full items-center justify-start gap-4 p-4">
+                <div class="flex w-full items-center justify-start gap-4 p-4 fade-up">
                     <a href="#" class="">
                         <img class="rounded-3xl" src="{{asset('assets/images/home/articals-1.jpg')}}" alt="artical">
                     </a>
@@ -590,11 +590,11 @@
 {{-- partners --}}
 <section class="w-full flex items-center justify-center mt-20">
     <div class="container">
-        <h2 class="w-full text-center text-[20px] md:text-[31px] text-[var(--dark-primary)] font-bold">
+        <h2 class="w-full text-center text-[20px] md:text-[31px] text-[var(--dark-primary)] font-bold fade-up">
             شركاء
             <span class="text-[var(--yello-primary)] ">النجاح</span>
         </h2>
-        <div class="swiper swiper3 w-full mt-4">
+        <div class="swiper swiper3 w-full mt-4 fade-up">
             <div class="swiper-wrapper" id="swiper-wrapper-41f2f6ebbd0cf8109">
                 @for ($i = 0; $i < 10; $i++) <div class="swiper-slide">
                     <div class="flex items-center justify-center">
