@@ -327,21 +327,24 @@
             $services = [
             [
             'title' => 'الأسنان',
-            'img' => asset('assets/images/home/service-1.jpg')
+            'img' => asset('assets/images/home/service-1.jpg'),
+            'url' => '/services-dantest'
             ],
             [
             'title' => 'الجلدية و التجميل و الليزر',
-            'img' => asset('assets/images/home/service-2.jpg')
+            'img' => asset('assets/images/home/service-2.jpg'),
+            'url' => '/services-dantest'
             ],
             [
             'title' => 'الطبي',
-            'img' => asset('assets/images/home/service-3.jpg')
+            'img' => asset('assets/images/home/service-3.jpg'),
+            'url' => '/services-dantest'
             ],
             ];
             @endphp
 
             @foreach ($services as $service)
-            <a href="#" class="rounded-3xl overflow-hidden relative ">
+            <a href="{{$service['url']}}" class="rounded-3xl overflow-hidden relative ">
                 <div class="service-img w-full">
                     <img src="{{$service['img']}}" alt="service">
                 </div>

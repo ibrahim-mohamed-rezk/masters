@@ -1,4 +1,5 @@
-<header id="header" class="header w-full flex items-center justify-start flex-col relative bg-cover bg-center bg-no-repeat min-h-[550px] "
+<header id="header"
+    class="header w-full flex items-center justify-start flex-col relative bg-cover bg-center bg-no-repeat min-h-[550px] "
     style="background-image: url({{ asset('assets/images/slider/slider-1.jpg') }});">
     <div class="container z-10">
 
@@ -82,8 +83,38 @@
                         <li>
                             <a href="/about" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">من نحن</a>
                         </li>
+                        {{-- dropdown item --}}
                         <li>
-                            <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">الخدمات</a>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center text-[var(--text-gray)] justify-between w-full py-2 px-3 rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ">الخدمات
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                                <ul class="p-2 text-sm font-semibold text-[var(--text-gray)] flex flex-col items-center justify-center gap-2"
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="/services" class="block py-2 px-3 md:p-0 text-[var(--text-gray)] text-center">جميع
+                                            الخدمات</a>
+                                    </li>
+                                    <li>
+                                        <a href="/services-dantest"
+                                            class="block py-2 px-3 md:p-0 text-[var(--text-gray)] text-center">خدمات الأسنان</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)] text-center">
+                                            خدمات الجلدية و التجميل و الليزر</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)] text-center">
+                                            خدمات الطبي</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">عروض الصيف</a>
@@ -98,7 +129,7 @@
                 </div>
             </div>
         </nav>
-        
+
         @yield('heroContent')
     </div>
     <div class="w-full absolute bottom-0 translate-y-[50%] left-0 right-0  z-0">
@@ -113,4 +144,3 @@
         </svg>
     </div>
 </header>
-
