@@ -22,6 +22,14 @@ Route::get('/services-dantest', function () {
     return view('services.dantest');
 });
 
+Route::get('/offers', function () {
+    return view('offers.index');
+});
+
+Route::get('/terms', function () {
+    return view('offers.terms');
+});
+
 Route::get('test', function () {
     return view('welcome');
 });

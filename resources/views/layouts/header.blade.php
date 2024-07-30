@@ -83,7 +83,7 @@
                         <li>
                             <a href="/about" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">من نحن</a>
                         </li>
-                        {{-- dropdown item --}}
+                        {{-- services dropdown item --}}
                         <li>
                             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
                                 class="flex items-center text-[var(--text-gray)] justify-between w-full py-2 px-3 rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ">الخدمات
@@ -94,16 +94,18 @@
                                 </svg></button>
                             <!-- Dropdown menu -->
                             <div id="dropdownNavbar"
-                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-3xl shadow w-44">
                                 <ul class="p-2 text-sm font-semibold text-[var(--text-gray)] flex flex-col items-center justify-center gap-2"
                                     aria-labelledby="dropdownLargeButton">
                                     <li>
-                                        <a href="/services" class="block py-2 px-3 md:p-0 text-[var(--text-gray)] text-center">جميع
+                                        <a href="/services"
+                                            class="block py-2 px-3 md:p-0 text-[var(--text-gray)] text-center">جميع
                                             الخدمات</a>
                                     </li>
                                     <li>
                                         <a href="/services-dantest"
-                                            class="block py-2 px-3 md:p-0 text-[var(--text-gray)] text-center">خدمات الأسنان</a>
+                                            class="block py-2 px-3 md:p-0 text-[var(--text-gray)] text-center">خدمات
+                                            الأسنان</a>
                                     </li>
                                     <li>
                                         <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)] text-center">
@@ -116,9 +118,37 @@
                                 </ul>
                             </div>
                         </li>
+                        {{-- offers dropdown item --}}
                         <li>
-                            <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">عروض الصيف</a>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="offersDropdownNavbar"
+                                class="flex items-center text-[var(--text-gray)] justify-between w-full py-2 px-3 rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ">العروض
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="offersDropdownNavbar"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-3xl shadow w-44">
+                                <ul class="p-2 text-sm font-semibold text-[var(--text-gray)] flex flex-col items-center justify-center gap-2"
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="/offers"
+                                            class="block py-2 px-3 md:p-0 text-[var(--text-gray)] text-center">كل
+                                            العروض</a>
+                                    </li>
+                                    <li>
+                                        <a href="/terms"
+                                            class="block py-2 px-3 md:p-0 text-[var(--text-gray)] text-center">الشروط
+                                            واﻷحكام
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
+                        {{-- <li>
+                            <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">العروض</a>
+                        </li> --}}
                         <li>
                             <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">الفروع</a>
                         </li>
