@@ -10,6 +10,10 @@ Route::get('/book-now', function () {
     return view('bookNow.index');
 });
 
+Route::get('/about', function () {
+    return view('about.index');
+});
+
 Route::get('test', function () {
     return view('welcome');
 });

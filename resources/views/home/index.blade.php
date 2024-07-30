@@ -437,9 +437,10 @@
 
                         <div class="flex justify-center items-center flex-col px-2 pb-2">
                             <div class="mt-4 w-full">
-                                <button type="button"
-                                    class="nav-bn text-white text-wrap focus:outline-none px-5 py-3 text-center font-bold w-full">إحجز
-                                    الآن<i class="fa-solid fa-calendar-days mr-3"></i></button>
+                                <a href="/book-now" class="w-full">
+                                    <button type="button"
+                                        class="w-full bg-[var(--yello-primary)] rounded-[20px] text-white text-wrap focus:outline-none px-5 py-3 text-center font-bold">إحجز
+                                        الآن<i class="fa-solid fa-calendar-days mr-3"></i></button></a>
                             </div>
                             <div class="mt-4 w-full">
                                 <button type="button"

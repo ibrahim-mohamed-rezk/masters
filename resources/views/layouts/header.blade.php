@@ -2,7 +2,6 @@
     style="background-image: url({{ asset('assets/images/slider/slider-1.jpg') }});">
     <div class="container z-10">
 
-
         <div class="top-bar w-full">
             <div class="w-full">
                 <div class="top-bar__container w-full flex items-center justify-between py-5 px-2">
@@ -52,9 +51,6 @@
             </div>
         </div>
 
-
-
-
         <nav class="w-full z-20 fade-up relative flex items-center justify-center">
             <div class="max-w-screen-xl flex  items-center justify-between mx-auto p-4 w-full">
                 <a href="/" class="flex items-center space-x-3 w-28">
@@ -81,10 +77,10 @@
                     <ul
                         class="flex flex-col items-center justify-center font-bold mt-4 border border-gray-100 rounded-2xl bg-gray-50 md:space-x-8  md:flex-row md:mt-0 md:border-0 md:bg-transparent w-10/12 md:w-auto mx-auto py-3">
                         <li class="md:ml-5 text-[var(--yello-primary)]">
-                            <a href="#" class="block py-2 px-3 md:p-0">الرئيسية</a>
+                            <a href="/" class="block py-2 px-3 md:p-0">الرئيسية</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">من نحن</a>
+                            <a href="/about" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">من نحن</a>
                         </li>
                         <li>
                             <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">الخدمات</a>
