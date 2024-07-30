@@ -5,6 +5,23 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 @endsection
 
+@section('heroContent')
+<div class="mt-36 w-full flex flex-col justify-around items-start px-2 fade-up">
+    <h3 class="font-bold text-[28px] text-[var(--dark-secondary)]">
+        إستمتعي <span class="text-[var(--yello-primary)] text-wrap">بالجمال</span> الآن ومدى الحياة
+    </h3>
+    <p class="text-[20px] text-[var(--text-gray)]">
+        نوفر خدمات ذات جودة عالية تحت سقف واحد بأحدث التقنيات المتقدمة في جميع التخصصات ( أسنان – جلدية – طبي ).
+    </p>
+    <div class="mt-4">
+        <a href="/book-now">
+            <button type="button"
+                class="bg-[var(--yello-primary)] rounded-3xl text-white text-wrap focus:outline-none px-5 py-3 text-center font-bold">إحجز
+                الآن<i class="fa-solid fa-calendar-days mr-3"></i></button></a>
+    </div>
+</div>
+@endsection
+
 @section('container')
 {{-- working days cards --}}
 <section class="w-full flex items-center justify-center z-10 relative">
@@ -261,7 +278,7 @@
                     هل قمت بزيارة عيادات ماسترز مؤخراً؟ <span class="text-[var(--yello-primary)]">قيم زيارتك
                         الآن!</span>
                 </h2>
-                <p class= "text-[12px]md:text-[15px] font-bold text-[var(--text-gray)] ">
+                <p class="text-[12px]md:text-[15px] font-bold text-[var(--text-gray)] ">
                     قيم مستوى الخدمة التي قدمت إليك.
                 </p>
             </div>
@@ -293,7 +310,8 @@
     <div class="container">
 
         <div class="flex flex-col items-start gap-2 w-full px-2">
-            <h2 class="w-full text-[20px] md:text-[31px] font-bold text-[var(--dark-primary)] text-center md:text-right fade-up">
+            <h2
+                class="w-full text-[20px] md:text-[31px] font-bold text-[var(--dark-primary)] text-center md:text-right fade-up">
                 <span class="text-[var(--yello-primary)]">خدمات </span> عيادات ماسترز
             </h2>
             <p class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold md:text-right fade-up">
@@ -303,7 +321,8 @@
         </div>
 
 
-        <div class="flex items-center justify-between w-full mt-8 gap-3 flex-wrap md:flex-nowrap lg:flex-nowrap px-2 fade-up">
+        <div
+            class="flex items-center justify-between w-full mt-8 gap-3 flex-wrap md:flex-nowrap lg:flex-nowrap px-2 fade-up">
             @php
             $services = [
             [
@@ -408,7 +427,8 @@
                         </div>
 
                         <div class="flex flex-col items-center justify-center mt-4 gap-1 px-2">
-                            <h3 class=" text-[12px] md:text-[15px] font-bold text-[var(--dark-primary)]">د. عاصم حمد</h3>
+                            <h3 class=" text-[12px] md:text-[15px] font-bold text-[var(--dark-primary)]">د. عاصم حمد
+                            </h3>
                             <span class="block text-[13px] font-bold text-[var(--yello-primary)]">ماسترز الأسنان</span>
                             <span class="text-[13px] font-bold text-[var(--text-gray)] text-center">ماسترز الأحساء
                                 الهفوف - خلف العثيم مول - حي
@@ -449,7 +469,8 @@
 <section class="w-full flex items-center justify-center mt-20">
     <div class="container">
 
-        <h2 class="w-full text-[20px] md:text-[31px] font-bold text-[var(--dark-primary)] text-center md:text-right mt-4 fade-up">
+        <h2
+            class="w-full text-[20px] md:text-[31px] font-bold text-[var(--dark-primary)] text-center md:text-right mt-4 fade-up">
             آراء <span class="text-[var(--yello-primary)]">عملاء ماسترز</span>
         </h2>
 
@@ -480,7 +501,8 @@
                                     الصراحة كل شي كان رائع من تعامل وترتيب وتنظيم والاخصائية فاطمة العسل شكرا مرا على
                                     اسلوبك اللطيف ويدك الخفيفه ماشاءالله
                                 </p>
-                                <h6 class= "text-[12px] md:text-[15px] text-[var(--yello-primary)] font-bold text-center mt-3">
+                                <h6
+                                    class="text-[12px] md:text-[15px] text-[var(--yello-primary)] font-bold text-center mt-3">
                                     أمل النعماني
                                 </h6>
                                 <div class="flex items-center justify-center gap-3 mt-2 ">
@@ -526,21 +548,21 @@
                 </div>
             </div>
         </div>
-        <div class="modal w-full" id="video-modal">
-            <div
-                class="modal-dialog flex items-center justify-center w-1/2 bg-[var(--bg-white)] mx-auto rounded-3xl p-4 flex-col">
-                <div onclick="hideModal()" class="w-full flex items-center justify-start cursor-pointer pr-4 pb-4">
-                    <i class="fa-solid fa-x text-red-600"></i>
-                </div>
-                <div class="w-full">
-                    <iframe class="rounded-2xl" id="video-frame" width="100%" height="400px" src="" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
 
     </div>
+    </div>
+    <div class="modal w-full" id="video-modal">
+        <div
+            class="modal-dialog flex items-center justify-center w-1/2 bg-[var(--bg-white)] mx-auto rounded-3xl p-4 flex-col">
+            <div onclick="hideModal()" class="w-full flex items-center justify-start cursor-pointer pr-4 pb-4">
+                <i class="fa-solid fa-x text-red-600"></i>
+            </div>
+            <div class="w-full">
+                <iframe class="rounded-2xl" id="video-frame" width="100%" height="400px" src="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -570,10 +592,12 @@
                             مقالات عامة
                         </a>
                         <a href="#">
-                            <h3 class= "line-clamp-2 text-[12px] md:text-[15px] text-[var(--dark-secondary)] font-bold">كل ما تحتاج معرفته عن البوتكس
+                            <h3 class="line-clamp-2 text-[12px] md:text-[15px] text-[var(--dark-secondary)] font-bold">
+                                كل ما تحتاج معرفته عن البوتكس
                                 وعيادات تجميل الأنف واسعار حقن بوتكس الأنف في
                                 السعودية</h3>
-                            <p class="line-clamp-2 mt-2 text-[12px] md:text-[15px] text-[var(--text-gray)] font-semibold">
+                            <p
+                                class="line-clamp-2 mt-2 text-[12px] md:text-[15px] text-[var(--text-gray)] font-semibold">
                                 &nbsp;
                                 يُعد البوتكس من الإجراءات التجميلية الشائعة التي تُستخدم لتحسين مظهر الأنف وتصحيح بعض
                                 العيوب الطفيفة دون الحاجة إلى جراحة. السؤال عن متى تظهر نتائج البوتكس للأ </p>
@@ -713,6 +737,25 @@
             }
         }
     });
+
+    // add hero section images slider here
+    const images = [
+       { img: "{{ asset('assets/images/slider/slider-1.jpg') }}"},
+       { img: "https://via.placeholder.com/1200x200/7fff7f/333333?text=Third+Image"},
+       { img: "https://via.placeholder.com/1200x200/7f7fff/333333?text=Second+Image"},
+    ]
+
+    let currentIndex = 0;
+    const header = document.getElementById('header');
+    header.style.minHeight = "700px";
+
+    function changeBackgroundImage() {
+        header.style.backgroundImage = `url(${images[currentIndex].img})`;
+        currentIndex = (currentIndex + 1) % images.length;
+    }
+
+    setInterval(changeBackgroundImage, 4000);
+    changeBackgroundImage();
 });
 
 const showModal = () => {

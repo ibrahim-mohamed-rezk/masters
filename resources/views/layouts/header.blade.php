@@ -1,4 +1,4 @@
-<header class="header  w-full flex items-center justify-start flex-col relative bg-cover bg-no-repeat min-h-[800px] "
+<header id="header" class="header  w-full flex items-center justify-start flex-col relative bg-cover bg-center bg-no-repeat min-h-[550px] "
     style="background-image: url({{ asset('assets/images/slider/slider-1.jpg') }});">
     <div class="container z-10">
 
@@ -84,42 +84,26 @@
                             <a href="#" class="block py-2 px-3 md:p-0">الرئيسية</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 md:p-0">من نحن</a>
+                            <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">من نحن</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 md:p-0">الخدمات</a>
+                            <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">الخدمات</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 md:p-0">عروض الصيف</a>
+                            <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">عروض الصيف</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 md:p-0">الفروع</a>
+                            <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">الفروع</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 md:p-0">الأطباء</a>
+                            <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">الأطباء</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-
-        <div class="mt-52 w-full flex flex-col justify-around items-start px-2 fade-up">
-            <h3 class="font-bold text-[28px] text-[var(--dark-secondary)]">
-                إستمتعي <span class="text-[var(--yello-primary)] text-wrap">بالجمال</span> الآن ومدى الحياة
-            </h3>
-            <p class="text-[20px] text-[var(--text-gray)]">
-                نوفر خدمات ذات جودة عالية تحت سقف واحد بأحدث التقنيات المتقدمة في جميع التخصصات ( أسنان – جلدية – طبي ).
-            </p>
-            <div class="mt-4">
-                <a href="/book-now">
-                    <button type="button"
-                        class="bg-[var(--yello-primary)] rounded-3xl text-white text-wrap focus:outline-none px-5 py-3 text-center font-bold">إحجز
-                        الآن<i class="fa-solid fa-calendar-days mr-3"></i></button></a>
-            </div>
-        </div>
-
-
+        
+        @yield('heroContent')
     </div>
     <div class="w-full absolute bottom-0 translate-y-[50%] left-0 right-0  z-0">
         <svg class="w-full" id='Group_1264' data-name='Group 1264' xmlns='http://www.w3.org/2000/svg' width='1920'
@@ -134,17 +118,3 @@
     </div>
 </header>
 
-{{-- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const toggleButton = document.querySelector('[data-collapse-toggle]');
-    const navbarDropdown = document.getElementById('navbar-dropdown');
-
-    if (toggleButton && navbarDropdown) {
-        toggleButton.addEventListener('click', function() {
-            const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
-            toggleButton.setAttribute('aria-expanded', !isExpanded);
-            navbarDropdown.classList.toggle('hidden');
-        });
-    }
-});
-</script> --}}

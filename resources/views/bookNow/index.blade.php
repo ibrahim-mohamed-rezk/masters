@@ -4,6 +4,14 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 @endsection
 
+@section('heroContent')
+<div class="mt-32 w-full flex flex-col justify-around items-start px-2 fade-up pr-10">
+    <h3 class="font-bold text-[28px] text-[var(--dark-secondary)]">
+        إحجز موعدك الآن
+    </h3>
+</div>
+@endsection
+
 @section('container')
 <section class="w-full flex items-center justify-center mt-20 px-2">
     <div class="container">
