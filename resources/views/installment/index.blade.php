@@ -4,10 +4,11 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 @endsection
 
+
 @section('heroContent')
 <div class="mt-32 w-full flex flex-col justify-around items-start px-2 fade-up pr-10">
     <h3 class="font-bold text-[28px] text-[var(--dark-secondary)]">
-        إحجز موعدك الآن
+        قسط خدماتك الآن
     </h3>
 </div>
 @endsection
@@ -19,10 +20,10 @@
 
         <div class="flex flex-col items-start gap-2 w-full">
             <h2 class="fade-up text-[20px] md:text-[31px] font-bold text-[var(--dark-primary)]">
-                إحجز موعدك <span class="text-[var(--yello-primary)]">الآن</span>
+                تمتع بالخدمة الآن، <span class="text-[var(--yello-primary)]">وادفع لاحقًا! </span>
             </h2>
             <p class="fade-up text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">
-                يمكنك الآن تقسيط جميع الخدمات العلاجية والتجميلية التي تحتاجها بسعر الكاش بدون فوائد.
+                لحجز موعد مسبق في عيادات ماسترز أدخل البيانات المطلوبة وسيتم التواصل معك من فريق خدمة العملاء لتأكيد الحجز.
             </p>
         </div>
 
@@ -115,9 +116,9 @@
                                 class="text-[var(--text-gray)] text-[12px] md:text-[15px] font-bold">التاريخ
                                 المناسب</label>
                             <div class="flex items-center justify-center w-2/3  rounded-3xl bg-[var(--bg-white)] p-4">
-                                <input type="date" class="bg-transparent border-none outline-none w-full"
-                                    name="attendance_date" value="2024-07-28" id="bookDate" required=""
-                                    min="2024-07-28">
+                                <input onchange="return checkAvailableAppointment();" type="date"
+                                    class="bg-transparent border-none outline-none w-full" name="attendance_date"
+                                    value="2024-07-28" id="bookDate" required="" min="2024-07-28">
                             </div>
                         </div>
                         <div class="flex items-center justify-between w-full fade-up">
@@ -136,7 +137,7 @@
                         <div class="flex items-center justify-center w-full mt-8 fade-up">
                             <button type="button"
                                 class="text-white text-wrap rounded-3xl outline-none border-none focus:outline-none px-5 py-3 text-center font-bold bg-[var(--yello-primary)]">
-                                إحجز موعدك الآن<i class="fa-solid fa-calendar-days mr-3"></i></button>
+                                إحصل على خدمة التقسيط<i class="fa-solid fa-calendar-days mr-3"></i></button>
                         </div>
 
                 </form>
@@ -154,12 +155,12 @@
 {{-- partners --}}
 <section class="w-full flex items-center justify-center mt-20">
     <div class="container">
-        <h2 class="w-full text-center text-[20px] md:text-[31px] text-[var(--dark-primary)] font-bold fade-up ">
+        <h2 class="w-full text-center text-[20px] md:text-[31px] text-[var(--dark-primary)] font-bold fade-up">
             شركاء
             <span class="text-[var(--yello-primary)] ">النجاح</span>
         </h2>
-        <div class="swiper swiper4 w-full mt-4 fade-up ">
-            <div class="swiper-wrapper" id="swiper-wrapper-41f2f6ebbd0cf81091">
+        <div class="swiper swiper3 w-full mt-4 fade-up">
+            <div class="swiper-wrapper" id="swiper-wrapper-41f2f6ebbd0cf8109">
                 @for ($i = 0; $i < 10; $i++) <div class="swiper-slide">
                     <div class="flex items-center justify-center">
                         <div class="max-w-[120px]">
@@ -178,21 +179,22 @@
 </section>
 @endsection
 
+
 @section('jsContainer')
 {{-- swiper --}}
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-    const swiper4 = new Swiper('.swiper4', {
+    const swiper3 = new Swiper('.swiper3', {
         loop: true,
         slidesPerView: 5,
         spaceBetween: 16,
         pagination: {
-            el: '.swiper4 .swiper-pagination',
+            el: '.swiper3 .swiper-pagination',
         },
         navigation: {
-            nextEl: '.swiper4 .swiper-button-next',
-            prevEl: '.swiper4 .swiper-button-prev',
+            nextEl: '.swiper3 .swiper-button-next',
+            prevEl: '.swiper3 .swiper-button-prev',
         },
         autoplay: {
             delay: 5000, 
@@ -221,6 +223,6 @@
             }
         }
     });
-});
+    });
 </script>
 @endsection

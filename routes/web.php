@@ -30,6 +30,17 @@ Route::get('/terms', function () {
     return view('offers.terms');
 });
 
+Route::get('/installment', function () {
+    return view('installment.index');
+});
+
+Route::get('/doctors', function () {
+    return view('doctors.index');
+});
+Route::get('/branches', function () {
+    return view('branches.index');
+});
+
 Route::get('test', function () {
     return view('welcome');
 });

@@ -145,15 +145,15 @@
                                     </li>
                                 </ul>
                             </div>
-                        </li>
-                        {{-- <li>
-                            <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">العروض</a>
-                        </li> --}}
+                        </li>                        
                         <li>
-                            <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">الفروع</a>
+                            <a href="/installment" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">التقسيط</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">الأطباء</a>
+                            <a href="/doctors" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">الأطباء</a>
+                        </li>
+                        <li>
+                            <a href="/branches" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">الفروع</a>
                         </li>
                     </ul>
                 </div>
