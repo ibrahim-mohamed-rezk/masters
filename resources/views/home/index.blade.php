@@ -7,10 +7,10 @@
 
 @section('heroContent')
 <div class="mt-36 w-full flex flex-col justify-around items-start px-2 fade-up">
-    <h3 class="font-bold text-[28px] text-[var(--dark-secondary)]">
+    <h3 id="heroTitle" class=" font-bold text-[28px] text-[var(--dark-secondary)]">
         إستمتعي <span class="text-[var(--yello-primary)] text-wrap">بالجمال</span> الآن ومدى الحياة
     </h3>
-    <p class="text-[20px] text-[var(--text-gray)]">
+    <p id="heroDescription" class=" text-[20px] text-[var(--text-gray)]">
         نوفر خدمات ذات جودة عالية تحت سقف واحد بأحدث التقنيات المتقدمة في جميع التخصصات ( أسنان – جلدية – طبي ).
     </p>
     <div class="mt-4">
@@ -744,17 +744,33 @@
 
     // add hero section images slider here
     const images = [
-       { img: "{{ asset('assets/images/slider/slider-1.jpg') }}"},
-       { img: "https://via.placeholder.com/1200x200/7fff7f/333333?text=Third+Image"},
-       { img: "https://via.placeholder.com/1200x200/7f7fff/333333?text=Second+Image"},
-    ]
+       { 
+           img: "{{ asset('assets/images/slider/slider-1.jpg') }}",
+           title: "إستمتعي <span class='text-[var(--yello-primary)] text-wrap'>بالجمال</span> الآن ومدى الحياة",
+           description: "نوفر خدمات ذات جودة عالية تحت سقف واحد بأحدث التقنيات المتقدمة في جميع التخصصات ( أسنان – جلدية – طبي )."
+       },
+       { 
+           img: "https://via.placeholder.com/1200x200/7fff7f/333333?text=Third+Image",
+           title: "عنوان جديد للصورة الثالثة",
+           description: "وصف جديد للصورة الثالثة."
+       },
+       { 
+           img: "https://via.placeholder.com/1200x200/7f7fff/333333?text=Second+Image",
+           title: "عنوان جديد للصورة الثانية",
+           description: "وصف جديد للصورة الثانية."
+       }
+    ];
 
     let currentIndex = 0;
     const header = document.getElementById('header');
+    const heroTitle = document.getElementById('heroTitle');
+    const heroDescription = document.getElementById('heroDescription');
     header.style.minHeight = "700px";
 
     function changeBackgroundImage() {
         header.style.backgroundImage = `url(${images[currentIndex].img})`;
+        heroTitle.innerHTML = images[currentIndex].title;
+        heroDescription.innerHTML = images[currentIndex].description;
         currentIndex = (currentIndex + 1) % images.length;
     }
 
