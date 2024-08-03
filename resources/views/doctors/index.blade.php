@@ -3,7 +3,7 @@
 @section('CssStyles')
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <style>
-    .active{
+    .active {
         background-color: var(--yello-primary);
         color: #fff;
     }
@@ -119,7 +119,8 @@
             </div>
             <div class="flex flex-col items-center justify-center w-full lg:w-[70%]">
                 <div class="flex flex-wrap w-full gap-5">
-                    @for ($i = 0; $i < 9; $i++) <div class=" w-full sm:w-[45%] md:w-[30%] overflow-hidden rounded-2xl bg-[var(--bg-white)] p-2 fade-up">
+                    @for ($i = 0; $i < 9; $i++) <div
+                        class=" w-full sm:w-[45%] md:w-[30%] overflow-hidden rounded-2xl bg-[var(--bg-white)] p-2 fade-up">
                         <div class="">
 
                             <div class="rounded-2xl overflow-hidden">
@@ -144,9 +145,10 @@
                                             الآن<i class="fa-solid fa-calendar-days mr-3"></i></button></a>
                                 </div>
                                 <div class="mt-4 w-full">
-                                    <button type="button"
-                                        class="rounded-[20px] bg-white text-[var(--text-gray)] text-wrap focus:outline-none px-5 py-3 text-center font-bold w-full">
-                                        المزيد</button>
+                                    <a href="/doctor/doctorName">
+                                        <button type="button"
+                                            class="rounded-[20px] bg-white text-[var(--text-gray)] text-wrap focus:outline-none px-5 py-3 text-center font-bold w-full">
+                                            المزيد</button></a>
                                 </div>
                             </div>
 
@@ -156,21 +158,20 @@
             </div>
             <div class="w-full flex items-center justify-center">
                 <nav class="w-full mt-10 px-2 fade-up">
-                    <ul class="w-full h-10 flex items-center justify-center gap-2 " >
-                        <li class="hidden sm:inline bg-[var(--bg-white)] rounded-3xl text-[13px] md:text-[15px] font-semibold text-[var(--yello-primary)]">
-                            <a href="#"
-                                class="flex items-center justify-center px-4 h-10">السابق</a>
+                    <ul class="w-full h-10 flex items-center justify-center gap-2 ">
+                        <li
+                            class="hidden sm:inline bg-[var(--bg-white)] rounded-3xl text-[13px] md:text-[15px] font-semibold text-[var(--yello-primary)]">
+                            <a href="#" class="flex items-center justify-center px-4 h-10">السابق</a>
                         </li>
-                        @for ($i = 1; $i < 6; $i++)
-                        <li class="{{$i == 2 ? "active" : ""}} bg-[var(--bg-white)] rounded-3xl text-[13px] md:text-[15px] font-semibold text-[var(--yello-primary)]">
-                            <a href="#"
-                                class="flex items-center justify-center px-4 h-10">{{$i}}</a>
-                        </li>
-                        @endfor
-                        <li class=" hidden sm:inline bg-[var(--bg-white)] rounded-3xl text-[13px] md:text-[15px] font-semibold text-[var(--yello-primary)]">
-                            <a href="#"
-                                class="flex items-center justify-center px-4 h-10 rounded-e-lg">التالي</a>
-                        </li>
+                        @for ($i = 1; $i < 6; $i++) <li
+                            class="{{$i == 2 ? "active" : ""}} bg-[var(--bg-white)] rounded-3xl text-[13px] md:text-[15px] font-semibold text-[var(--yello-primary)]">
+                            <a href="#" class="flex items-center justify-center px-4 h-10">{{$i}}</a>
+                            </li>
+                            @endfor
+                            <li
+                                class=" hidden sm:inline bg-[var(--bg-white)] rounded-3xl text-[13px] md:text-[15px] font-semibold text-[var(--yello-primary)]">
+                                <a href="#" class="flex items-center justify-center px-4 h-10 rounded-e-lg">التالي</a>
+                            </li>
                     </ul>
                 </nav>
             </div>

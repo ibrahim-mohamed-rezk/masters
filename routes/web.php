@@ -37,8 +37,13 @@ Route::get('/installment', function () {
 Route::get('/doctors', function () {
     return view('doctors.index');
 });
+
 Route::get('/branches', function () {
     return view('branches.index');
+});
+
+Route::get('/doctor/{doctorName}', function () {
+    return view('doctors.doctor');
 });
 
 Route::get('test', function () {

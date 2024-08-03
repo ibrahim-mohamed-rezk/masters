@@ -446,9 +446,10 @@
                                         الآن<i class="fa-solid fa-calendar-days mr-3"></i></button></a>
                             </div>
                             <div class="mt-4 w-full">
-                                <button type="button"
-                                    class="rounded-[20px] bg-white text-[var(--text-gray)] text-wrap focus:outline-none px-5 py-3 text-center font-bold w-full">
-                                    المزيد</button>
+                                <a href="/doctor/doctorName">
+                                    <button type="button"
+                                        class="rounded-[20px] bg-white text-[var(--text-gray)] text-wrap focus:outline-none px-5 py-3 text-center font-bold w-full">
+                                        المزيد</button></a>
                             </div>
                         </div>
 
