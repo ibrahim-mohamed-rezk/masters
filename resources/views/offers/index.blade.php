@@ -45,7 +45,7 @@
         </div>
 
         <div class="flex items-center justify-center flex-wrap gap-5 mt-5">
-            @for ($i = 0; $i < 10; $i++) <a href="#" class="rounded-3xl overflow-hidden relative fade-up">
+            @for ($i = 0; $i < 10; $i++) <a href="/offers/offerName" class="rounded-3xl overflow-hidden relative fade-up">
                 <div class="service-img w-full">
                     <img src="{{asset('assets/images/offers/offers-1.jpg')}}" alt="offer">
                 </div>

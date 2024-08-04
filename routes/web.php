@@ -26,6 +26,10 @@ Route::get('/offers', function () {
     return view('offers.index');
 });
 
+Route::get('/offers/{offerName}', function () {
+    return view('offers.offer');
+});
+
 Route::get('/terms', function () {
     return view('offers.terms');
 });
