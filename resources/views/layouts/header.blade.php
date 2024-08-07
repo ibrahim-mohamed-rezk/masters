@@ -1,5 +1,5 @@
 <header id="header"
-    class="header w-full flex items-center justify-start flex-col relative bg-cover bg-center bg-no-repeat min-h-[550px] "
+    class="header w-full max-w-[1920px] mx-auto flex items-center justify-start flex-col relative bg-cover bg-center bg-no-repeat min-h-[550px] "
     style="background-image: url({{ asset('assets/images/slider/slider-1.jpg') }});">
     <div class="container z-10">
 

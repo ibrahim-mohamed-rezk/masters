@@ -14,7 +14,7 @@
 
     <body>
         @include('layouts.header')
-        <main class="w-full flex flex-col items-center justify-center mb-20">
+        <main class="w-full max-w-[1920px] mx-auto overflow-hidden flex flex-col items-center justify-center mb-20">
             @yield('container')
         </main>
         @include('layouts.footer')

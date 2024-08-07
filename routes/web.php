@@ -30,6 +30,10 @@ Route::get('/offers/{offerName}', function () {
     return view('offers.offer');
 });
 
+Route::get('/offers/book-offer/{offerName}', function () {
+    return view('offers.book');
+});
+
 Route::get('/terms', function () {
     return view('offers.terms');
 });
@@ -49,6 +53,17 @@ Route::get('/branches', function () {
 Route::get('/doctor/{doctorName}', function () {
     return view('doctors.doctor');
 });
+
+Route::get('/articals', function () {
+    return view('articals.index');
+});
+
+Route::get('/articals/{articalName}', function () {
+    return view('articals.artical');
+});
+
+
+
 
 Route::get('test', function () {
     return view('welcome');

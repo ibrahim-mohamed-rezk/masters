@@ -14,7 +14,7 @@
 @endsection
 
 @section('container')
-{{-- doctor more info --}}
+{{-- offer more info --}}
 <section class="w-full flex items-center justify-center mt-20 px-2">
     <div class="container">
         <div class="flex flex-col items-start gap-2 w-full">
@@ -74,9 +74,9 @@
                         class=" w-full sm:w-[45%] md:w-[30%] overflow-hidden rounded-2xl bg-[var(--bg-white)] p-2 fade-up">
                         <div class="">
 
-                            <div class="rounded-2xl overflow-hidden w-full">
+                            <a href="/offers/book-offer/offerName" class="rounded-2xl overflow-hidden w-full">
                                 <img class="w-full" src="{{ asset('assets/images/offers/offer.jpg') }}" alt="doctor">
-                            </div>
+                            </a>
 
                             <div class="flex flex-col items-center justify-center mt-4 gap-1 px-2">
                                 <h3 class=" text-center text-[12px] md:text-[15px] font-bold text-[var(--dark-primary)]">تقويم

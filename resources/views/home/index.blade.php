@@ -410,7 +410,7 @@
             <h2 class="text-[20px] md:text-[31px] text-[var(--dark-primary)] font-bold">
                 أطباء <span class="text-[var(--yello-primary)]">عيادات ماسترز</span>
             </h2>
-            <a href="#" class=" text-[12px] md:text-[15px] font-bold text-[var(--yello-primary)]">
+            <a href="/doctors" class=" text-[12px] md:text-[15px] font-bold text-[var(--yello-primary)]">
                 عرض جميع اﻷطباء
                 <div class="inline-block mr-2 rounded-xl bg-[var(--bg-white)] px-3 py-1">
                     <i class="fa-solid fa-chevron-left text-[var(--yello-primary)]"></i>
@@ -578,7 +578,7 @@
             <h2 class="text-[20px] md:text-[31px] text-[var(--dark-primary)] font-bold">
                 أحدث <span class="text-[var(--yello-primary)]">المقالات </span>
             </h2>
-            <a href="#" class=" text-[12px] md:text-[15px] font-bold text-[var(--yello-primary)]">
+            <a href="/articals" class=" text-[12px] md:text-[15px] font-bold text-[var(--yello-primary)]">
                 عرض جميع المقالات
                 <div class="inline-block mr-2 rounded-xl bg-[var(--bg-white)] px-3 py-1">
                     <i class="fa-solid fa-chevron-left text-[var(--yello-primary)]"></i>

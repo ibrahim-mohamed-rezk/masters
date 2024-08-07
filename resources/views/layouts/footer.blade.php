@@ -1,6 +1,6 @@
-<footer class="relative w-full flex items-center justify-center mt-20 flex-col bg-[var(--bg-white)] pt-24">
+<footer class="relative w-full max-w-[1920px] overflow-hidden mx-auto flex items-center justify-center mt-20 flex-col bg-[var(--bg-white)] pt-24">
     <div class="w-full absolute top-0 translate-y-[-50%] left-0 right-0  z-0">
-        <svg class="w-full" id="Group_1264" data-name="Group 1264" xmlns="http://www.w3.org/2000/svg" width="1920"
+        <svg class="w-full " id="Group_1264" data-name="Group 1264" xmlns="http://www.w3.org/2000/svg" width="1920"
             height="213.996" viewBox="0 0 1920 213.996">
             <path id="Path_1784" data-name="Path 1784"
                 d="M1920,114.944c-224.6-84.1-409.8-87.38-536-91.559C1039.5,12.039,875.3,119.223,494,123.9,282.5,126.488,110,76.23,0,51.25V0H1920Z"
@@ -102,7 +102,7 @@
                 </div>
 
 
-                <div class="mt-10 flex items-center justify-center flex-col gap-2 w-full fade-up">
+                <div class="mt-10 flex items-center justify-center flex-col gap-2 w-full">
                     <h6 class="text-[var(--yello-primary)] font-bold text-[15px]">تابعنا على وسائل التواصل الإجتماعي
                     </h6>
                     <div class=" w-full mt-2">
