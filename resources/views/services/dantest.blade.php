@@ -72,7 +72,7 @@
 </section>
 
 {{-- book now --}}
-<section class="mt-20 w-full flex items-center justify-center bg-[var(--yello-secondary)] fade-up">
+<section class="mt-20 w-full flex items-center justify-center bg-[var(--yello-primary)] fade-up">
     <div class="container">
         <div class="flex justify-between items-center py-16 flex-col lg:flex-row md:flex-row gap-8">
             <div class="">

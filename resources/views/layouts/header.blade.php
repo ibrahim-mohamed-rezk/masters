@@ -1,5 +1,5 @@
 <header id="header"
-    class="header w-full max-w-[1920px] mx-auto flex items-center justify-start flex-col relative bg-cover bg-center bg-no-repeat min-h-[550px] "
+    class="header w-full mx-auto flex items-center justify-start flex-col relative bg-cover bg-center bg-no-repeat min-h-[650px] "
     style="background-image: url({{ asset('assets/images/slider/slider-1.jpg') }});">
     <div class="container z-10">
 
@@ -145,7 +145,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </li>                        
+                        </li>
                         <li>
                             <a href="/installment" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">التقسيط</a>
                         </li>
@@ -155,6 +155,34 @@
                         <li>
                             <a href="/branches" class="block py-2 px-3 md:p-0 text-[var(--text-gray)]">الفروع</a>
                         </li>
+                        {{-- contact dropdown item --}}
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="contactDropdownNavbar"
+                                class="flex items-center text-[var(--text-gray)] justify-between w-full py-2 px-3 rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ">تواصل معنا
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- contact menu -->
+                            <div id="contactDropdownNavbar"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-3xl shadow w-44">
+                                <ul class="p-2 text-sm font-semibold text-[var(--text-gray)] flex flex-col items-center justify-center gap-2"
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="/contact-us"
+                                            class="block py-2 px-3 md:p-0 text-[var(--text-gray)] text-center">
+                                            تواصل معنا</a>
+                                    </li>
+                                    <li>
+                                        <a href="/rate-us"
+                                            class="block py-2 px-3 md:p-0 text-[var(--text-gray)] text-center">
+                                            قيم زيارتك
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -163,8 +191,8 @@
         @yield('heroContent')
     </div>
     <div class="w-full absolute bottom-0 translate-y-[50%] left-0 right-0  z-0">
-        <svg class="w-full" id='Group_1264' data-name='Group 1264' xmlns='http://www.w3.org/2000/svg' width='1920'
-            height='214' viewBox='0 0 1920 214'>
+        <svg class="w-full h-full" id="Group_1264" data-name="Group 1264" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1920 214" preserveAspectRatio="none">
             <path id='Path_1784' data-name='Path 1784'
                 d='M1920,11.456c-224.6,84.1-409.8,87.38-536,91.559C1039.5,114.361,875.3,7.177,494,2.5,282.5-.088,110,50.17,0,75.15V126.4H1920Z'
                 transform='translate(0 -2.403)' fill='#fff' opacity='0.16' />

@@ -62,6 +62,13 @@ Route::get('/articals/{articalName}', function () {
     return view('articals.artical');
 });
 
+Route::get('/contact-us', function () {
+    return view('contact.index');
+});
+
+Route::get('/rate-us', function () {
+    return view('contact.rate');
+});
 
 
 

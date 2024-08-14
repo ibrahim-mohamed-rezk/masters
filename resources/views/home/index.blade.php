@@ -287,7 +287,7 @@
     </div>
 </section>
 {{-- book now --}}
-<section class="mt-20 w-full flex items-center justify-center bg-[var(--yello-secondary)] fade-up">
+<section class="mt-20 w-full flex items-center justify-center bg-[var(--yello-primary)] fade-up">
     <div class="container">
         <div class="flex justify-between items-center py-16 flex-col lg:flex-row md:flex-row gap-8">
             <div class="">
@@ -766,7 +766,7 @@
     const header = document.getElementById('header');
     const heroTitle = document.getElementById('heroTitle');
     const heroDescription = document.getElementById('heroDescription');
-    header.style.minHeight = "700px";
+    header.style.minHeight = "950px";
 
     function changeBackgroundImage() {
         header.style.backgroundImage = `url(${images[currentIndex].img})`;
