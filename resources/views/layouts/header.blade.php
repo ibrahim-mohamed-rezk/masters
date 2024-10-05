@@ -1,5 +1,5 @@
 <header id="header"
-    class="header w-full mx-auto flex items-center justify-start flex-col relative bg-cover bg-center bg-no-repeat min-h-[650px] "
+    class="header w-full mx-auto flex items-center justify-start flex-col relative bg-cover bg-left bg-no-repeat min-h-[650px] "
     style="background-image: url({{ asset('assets/images/slider/slider-1.jpg') }});">
     <div class="container z-10">
 
@@ -58,7 +58,7 @@
                     <img src="{{ asset('assets/images/logo/logo.avif') }}" class="" alt="Logo">
                 </a>
                 <div class="flex md:order-2 space-x-3 md:space-x-0 ">
-                    <a href="/book-now">
+                    <a href="/book-now" class="hidden md:!block">
                         <button type="button"
                             class="bg-[var(--yello-primary)] rounded-3xl text-white text-wrap focus:outline-none px-5 py-3 text-center font-bold">إحجز
                             الآن<i class="fa-solid fa-calendar-days mr-3"></i></button></a>
@@ -158,7 +158,8 @@
                         {{-- contact dropdown item --}}
                         <li>
                             <button id="dropdownNavbarLink" data-dropdown-toggle="contactDropdownNavbar"
-                                class="flex items-center text-[var(--text-gray)] justify-between w-full py-2 px-3 rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ">تواصل معنا
+                                class="flex items-center text-[var(--text-gray)] justify-between w-full py-2 px-3 rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto ">تواصل
+                                معنا
                                 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -181,6 +182,14 @@
                                         </a>
                                     </li>
                                 </ul>
+                            </div>
+                        </li>
+                        <li class=" w-full md:!hidden">
+                            <div class="flex w-full md:order-2 space-x-3 md:space-x-0 ">
+                                <a class="w-full px-5 mt-5" href="/book-now">
+                                    <button type="button"
+                                        class="bg-[var(--yello-primary)] rounded-3xl text-white text-wrap focus:outline-none px-5 py-3 text-center w-full font-bold">إحجز
+                                        الآن<i class="fa-solid fa-calendar-days mr-3"></i></button></a>
                             </div>
                         </li>
                     </ul>

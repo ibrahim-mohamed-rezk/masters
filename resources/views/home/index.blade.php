@@ -6,7 +6,7 @@
 @endsection
 
 @section('heroContent')
-<div class="mt-36 w-full flex flex-col justify-around items-start px-2 fade-up">
+<div class="mt-[clamp(9rem,12.5vw,15rem)] w-full flex flex-col justify-around items-start px-2 fade-up">
     <h3 id="heroTitle" class=" font-bold text-[28px] text-[var(--dark-secondary)]">
         إستمتعي <span class="text-[var(--yello-primary)] text-wrap">بالجمال</span> الآن ومدى الحياة
     </h3>
@@ -766,7 +766,7 @@
     const header = document.getElementById('header');
     const heroTitle = document.getElementById('heroTitle');
     const heroDescription = document.getElementById('heroDescription');
-    header.style.minHeight = "950px";
+    header.style.minHeight = "clamp(700px, 49.4791666vw, 950px)";
 
     function changeBackgroundImage() {
         header.style.backgroundImage = `url(${images[currentIndex].img})`;
